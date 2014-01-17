@@ -10,11 +10,11 @@ $frameColor: #ffd503;
 
 @font-face {
     font-family: 'proxima_nova_rgbold';
-    src: url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -22,11 +22,11 @@ $frameColor: #ffd503;
 
 @font-face {
     font-family: 'proxima_nova_ltlight';
-    src: url('/fonts/mark_simonson_-_proxima_nova_light-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight') format('svg');
+    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -34,11 +34,11 @@ $frameColor: #ffd503;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -95,7 +95,7 @@ body {
     width: 40px;
     height: 20px;
     float: right;
-    background: url('/img/main/all_news.png');
+    background: url('../img/main/all_news.png');
   }
 
   .news-list {
@@ -221,7 +221,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 30px;
-    background: url('/img/main/all_deals.png');
+    background: url('../img/main/all_deals.png');
   }
 
 }
@@ -325,7 +325,7 @@ body {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
-      background: url('/img/main/to_cart.png')
+      background: url('../img/main/to_cart.png')
     }
   }
 }

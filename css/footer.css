@@ -24,7 +24,7 @@ footer {
 
 footer .about {
   height: 76px;
-  background: url("/img/footer/about_bg.png");
+  background: url("../img/footer/about_bg.png");
   font-size: 16px;
 }
 
@@ -170,7 +170,7 @@ footer .info .social a {
   *display: inline;
   width: 36px;
   height: 36px;
-  background: url("/img/footer/social.png");
+  background: url("../img/footer/social.png");
 }
 
 @media -sass-debug-info {
@@ -251,7 +251,7 @@ footer .info .cards .cards-visa {
   width: 59px;
   height: 19px;
   margin-right: 10px;
-  background: url("/img/footer/visa.png");
+  background: url("../img/footer/visa.png");
 }
 
 @media -sass-debug-info {
@@ -273,5 +273,5 @@ footer .info .cards .cards-mastercard {
   vertical-align: middle;
   width: 52px;
   height: 31px;
-  background: url("/img/footer/mastercard.png");
+  background: url("../img/footer/mastercard.png");
 }
