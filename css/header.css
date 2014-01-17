@@ -1,0 +1,203 @@
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \000033;
+  }
+}
+
+header {
+  margin-bottom: 20px;
+  height: 255px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \000037;
+  }
+}
+
+header .top-info {
+  height: 50px;
+  background: #f6f6f6;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+header .top-info .top-info-content {
+  width: 970px;
+  margin: 0 auto;
+  padding: 15px 0px;
+  font-size: 16px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000317;
+  }
+}
+
+header .top-info .top-info-content .cities {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 13px;
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000322;
+  }
+}
+
+header .top-info .top-info-content .cities .current-city {
+  color: #2b2a2a;
+  text-decoration: none;
+  border-bottom: 1px dotted #2b2a2a;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000328;
+  }
+}
+
+header .top-info .top-info-content .cities .rest-cities {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000336;
+  }
+}
+
+header .top-info .top-info-content .links {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-align: right;
+  float: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000341;
+  }
+}
+
+header .top-info .top-info-content .links a {
+  color: #2b2a2a;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000347;
+  }
+}
+
+header .top-info .top-info-content .links .enter-link {
+  margin-left: 50px;
+  color: #f75195;
+  border-bottom: 1px dotted #f75195;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000353;
+  }
+}
+
+header .top-info .top-info-content .links .basket-link {
+  margin-left: 50px;
+  border-bottom: 1px solid rgba(43, 42, 42, 0.5);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000358;
+  }
+}
+
+header .top-info .top-info-content .links .enter-link,
+header .top-info .top-info-content .links .basket-link {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000362;
+  }
+}
+
+header .top-info .top-info-content .links .enter-link:before,
+header .top-info .top-info-content .links .basket-link:before {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 10px;
+  height: 15px;
+  display: block;
+  content: "";
+  border: 1px solid red;
+}

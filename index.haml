@@ -1,0 +1,229 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %title Яркий мир
+    %meta{content: "", name: "description"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    / Place favicon.ico and apple-touch-icon.png in the root directory
+    %link{href: "css/normalize.css", rel: "stylesheet"}
+    %link{href: "css/main.css", rel: "stylesheet"}
+    %link{href: "css/footer.css", rel: "stylesheet"}
+    %link{href: "css/header.css", rel: "stylesheet"}
+    / %link{href: "css/960_12_col.css", rel: "stylesheet"}
+    %script{src: "js/vendor/modernizr-2.6.2.min.js"}
+  %body
+    %header
+      .top-info
+        .top-info-content
+          .cities
+            %a.current-city{href: "#"}
+              Санкт-Петербург
+            %ul.rest-cities
+              %li.rest-cities-item
+                %a.rest-cities-link{href:"#"}
+                  Москва
+
+          .links
+            %a.info-link{href: "#"} Доставка и оплата
+            %a.info-link{href: "#"} О компании
+            %a.enter-link{href: "#"} Войти
+            %a.basket-link{href: "#"} В корзине 2 товара
+            %span.total-price
+              32 000a
+
+    .content
+      .main-info
+        .news
+          %a.all-news{href: "#"}
+          %h3 НОВОСТИ
+          %ul.news-list
+            %li.single-news
+              %img{src: 'http://placehold.it/77x77'}
+              %span.date 12 ноября
+              %a.news-content{href: "#"} Cовместная акция с компанией Nikon
+            %li.single-news
+              %img{src: 'http://placehold.it/77x77'}
+              %span.date 12 ноября
+              %a.news-content{href: "#"} Выставка Владимира Капустина "Армения. Двадцать лет спустя"
+            %li.single-news
+              %img{src: 'http://placehold.it/77x77'}
+              %span.date 12 ноября
+              %a.news-content{href: "#"} Cовместная акция
+            %li.single-news
+              %img{src: 'http://placehold.it/77x77'}
+              %span.date 12 ноября
+              %a.news-content{href: "#"} Cовместная акция с компанией Nikon
+        .banners
+          .banner-container
+            %a.all-deals{href: "#"} 
+              Все акции
+            %ul.full-banners
+              %li.single-banner
+                %img{src: "http://placehold.it/652x460"}
+              %li.single-banner
+                %img{src: "http://placehold.it/652x460"}
+            .banners-navigation
+              %a.prev-banner{href: "#"} <
+              %ul.banners-preview
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+                %li.single-banner-preview
+                  %a{href:"#"}
+                    получить
+                    %br
+                    карту клиента
+              %a.next-banner{href: "#"} >
+
+      .new-goods
+        %h2.new-goods-header 
+          Новые товары
+        .new-goods-container
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+
+        %a.view-all{href: "#"} Посмотреть все новинки
+
+      .popular-goods
+        %h2.popular-goods-heading
+          Хиты продаж
+        .popular-goods-container
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+          .single-good-item
+            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %span.single-good-title 
+              Canon EOS-60D 18-55  IS Kit
+            .single-good-item-custmer
+              %span.price 
+                32 990 c
+              %a.add-to-cart{href: "#"} 
+                в корзину
+        %a.view-all{href: "#"} Посмотреть все новинки
+
+    %footer
+      .about
+        .about-content
+          %span.copyright
+            © Яркий Мир, 2013
+          %ul.about-menu
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Доставка и оплата
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Сервис
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Компания
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Вакансии
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Контакты
+            %li.about-menu-item
+              %a.about-menu-link{href: "#"}
+                Условия продажи
+      .info
+        .phone
+          (812) 335 55 00
+        .cards
+          %a.cards-visa{href: "#"}
+          %a.cards-mastercard{href: "#"}
+        .social
+          %a.social-vk{href: "#"}
+          %a.social-facebook{href: "#"}
+          %a.social-twitter{href: "#"}
+
+    %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    %script{src: "js/plugins.js"}
+    %script{src: "js/main.js"}

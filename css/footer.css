@@ -1,0 +1,277 @@
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \000033;
+  }
+}
+
+footer {
+  height: 200px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \000036;
+  }
+}
+
+footer .about {
+  height: 76px;
+  background: url("/img/footer/about_bg.png");
+  font-size: 16px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+footer .about .about-content {
+  width: 940px;
+  padding: 30px 10px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000317;
+  }
+}
+
+footer .about .about-content .about-menu {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+footer .about .about-content .about-menu .about-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 25px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000328;
+  }
+}
+
+footer .about .about-content .about-menu .about-menu-item .about-menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000337;
+  }
+}
+
+footer .info {
+  width: 940px;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+footer .info .phone {
+  font-family: 'proxima_nova_ltlight';
+  float: left;
+  color: #2b2a2a;
+  font-size: 24px;
+  line-height: 24px;
+  width: 200px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+footer .info .social {
+  float: left;
+  width: 200px;
+  text-align: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000356;
+  }
+}
+
+footer .info .social a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 36px;
+  height: 36px;
+  background: url("/img/footer/social.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+footer .info .social .social-twitter {
+  background-position: 36px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000367;
+  }
+}
+
+footer .info .social .social-facebook {
+  background-position: 78px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000371;
+  }
+}
+
+footer .info .social .social-vk {
+  background-position: 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+footer .info .cards {
+  float: left;
+  width: 540px;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000382;
+  }
+}
+
+footer .info .cards .cards-visa {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  width: 59px;
+  height: 19px;
+  margin-right: 10px;
+  background: url("/img/footer/visa.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/footer\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+footer .info .cards .cards-mastercard {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  width: 52px;
+  height: 31px;
+  background: url("/img/footer/mastercard.png");
+}

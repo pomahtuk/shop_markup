@@ -1,0 +1,101 @@
+@import "compass";
+
+footer {
+  height: 200px;
+
+  .about {
+    height: 76px;
+    background: url('/img/footer/about_bg.png');
+    font-size: 16px;
+
+    .about-content {
+      width: 940px;
+      padding: 30px 10px;
+      margin: 0 auto;
+      color: #fff;
+
+      .about-menu {
+        @include inline-block;
+        float: right;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .about-menu-item {
+          @include inline-block;
+          margin-left: 25px;
+
+          .about-menu-link {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    width: 940px;
+    padding: 30px 10px;
+    margin: 0 auto;
+
+    .phone {
+      font-family: 'proxima_nova_ltlight';
+      float: left;
+      color: #2b2a2a;
+      font-size: 24px;
+      line-height: 24px;
+      width: 200px;
+    }
+
+    .social {
+      float: left;
+      width: 200px;
+      text-align: right;
+
+      a {
+        @include inline-block;
+        width: 36px;
+        height: 36px;
+        background: url('/img/footer/social.png');
+      }
+
+      .social-twitter {
+        background-position: 36px 0;
+      }
+
+      .social-facebook {
+        background-position: 78px 0;
+      }
+
+      .social-vk {
+        background-position: 0 0;
+      }
+
+    }
+
+    .cards {
+      float: left;
+      width: 540px;
+      text-align: center;
+
+      .cards-visa {
+        @include inline-block;
+        vertical-align: middle;
+        width: 59px;
+        height: 19px;
+        margin-right: 10px;
+        background: url('/img/footer/visa.png')
+      }
+      .cards-mastercard {
+        @include inline-block;
+        vertical-align: middle;
+        width: 52px;
+        height: 31px;
+        background: url('/img/footer/mastercard.png')
+      }
+
+    }
+
+  }
+}

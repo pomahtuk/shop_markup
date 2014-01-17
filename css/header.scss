@@ -1,0 +1,80 @@
+@import "compass";
+
+header {
+  margin-bottom: 20px;
+  height: 255px;
+
+  .top-info {
+    height: 50px;
+    background: #f6f6f6;
+
+    .top-info-content {
+      width: 970px;
+      margin: 0 auto;
+      padding: 15px 0px;
+      font-size: 16px;
+
+      .cities {
+        @include inline-block;
+        margin-left: 13px;
+        float: left;
+
+        .current-city {
+          color: #2b2a2a;
+          text-decoration: none;
+          border-bottom: 1px dotted #2b2a2a;
+        }
+
+        .rest-cities {
+          display: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .links {
+        @include inline-block;
+        text-align: right;
+        float: right;
+
+        a{
+          color: #2b2a2a;
+          text-decoration: none;
+          margin-left: 30px;
+        }
+
+        .enter-link {
+          margin-left: 50px;
+          color: #f75195;
+          border-bottom: 1px dotted #f75195;
+        }
+
+        .basket-link {
+          margin-left: 50px;
+          border-bottom: 1px solid rgba(#2b2a2a, 0.5);
+        }
+
+        .enter-link,
+        .basket-link {
+          position: relative;
+
+          &:before {
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            width: 10px;
+            height: 15px;
+            display: block;
+            content: "";
+            border: 1px solid red;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
