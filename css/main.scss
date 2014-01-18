@@ -121,14 +121,17 @@ body {
       color: #fff;
       font-weight: bold;
       text-decoration: none;
+      // background: url("../img/main/mincro_sprite.png") -26px -23px;
     }
 
     .prev-banner {
       left: 12px;
+      background: url("../img/main/mincro_sprite.png") -45px -23px;
     }
 
     .next-banner {
       right: 12px;
+      background: url("../img/main/mincro_sprite.png") -26px -23px;
     }
 
     .banners-preview {
@@ -227,6 +230,26 @@ body {
 
   .popular-goods-container {
     margin-bottom: 30px;
+  }
+}
+
+.ruble {
+  font-size: 0px;
+  &:before {
+    font-family: 'Ruble';
+    font-style: normal;
+    content: "a";
+    font-size: 16px;
+  }
+}
+
+.ruble-bold {
+  font-size: 0px;
+  &:before {
+    font-family: 'Ruble';
+    font-style: normal;
+    content: "c";
+    font-size: 16px;
   }
 }
 
