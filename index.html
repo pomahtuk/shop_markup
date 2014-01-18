@@ -517,12 +517,12 @@
       </div>
     </footer>
     <div class='popup-overlay'>
-      <div class='register-popup register'>
+      <div class='register-popup auth'>
         <div class='tabs'>
-          <a class='tab-link auth' href='#'>
+          <a class='tab-link auth active' href='#'>
             авторизация
           </a>
-          <a class='tab-link register active' href='#'>
+          <a class='tab-link register' href='#'>
             регистрация
           </a>
         </div>
@@ -581,15 +581,66 @@
                 <label for='birth'>
                   Дата рождения
                 </label>
-                <input id='day' name='day' type='text'>
-                <input id='month' name='month' type='text'>
-                <input id='year' name='year' type='text'>
+                <input id='day' name='day' placeholder='день' type='text'>
+                <select id='month' name='month'>
+                  <option disabled='' selected='selected'>
+                    месяц
+                  </option>
+                  <option value='01'>
+                    Январь
+                  </option>
+                  <option value='02'>
+                    Февраль
+                  </option>
+                  <option value='03'>
+                    Март
+                  </option>
+                  <option value='04'>
+                    Апрель
+                  </option>
+                  <option value='05'>
+                    Май
+                  </option>
+                  <option value='06'>
+                    Июнь
+                  </option>
+                  <option value='07'>
+                    Июль
+                  </option>
+                  <option value='08'>
+                    Август
+                  </option>
+                  <option value='09'>
+                    Сентябрь
+                  </option>
+                  <option value='10'>
+                    Октябрь
+                  </option>
+                  <option value='11'>
+                    Ноябрь
+                  </option>
+                  <option value='12'>
+                    Декабрь
+                  </option>
+                </select>
+                <!-- %input#month{type: "text", name: "month", placeholder: "месяц"} -->
+                <input id='year' name='year' placeholder='год' type='text'>
               </div>
-              <div class='control-group agree'>
-                Нажимая кнопку «Регистрация» я подтверждаю свое согласие с
-                <a class='legal' href='#'>
-                  Условиями продажи
-                </a>
+              <div class='control-group misc'>
+                <div class='want-to-know'>
+                  <input id='want' name='want' type='checkbox'>
+                  <label for='want'>
+                    Хочу знать об интересных предложениях
+                  </label>
+                </div>
+                <div class='i-agree'>
+                  Нажимая кнопку «Регистрация» я подтверждаю свое согласие с
+                  <a class='legal' href='#'>
+                    Условиями продажи
+                  </a>
+                </div>
+              </div>
+              <div class='control-group submit'>
                 <input type='submit' value='Зарегистрироваться'>
               </div>
             </form>

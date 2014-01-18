@@ -789,6 +789,7 @@ body {
   height: 100%;
   background: rgba(18, 15, 16, 0.65);
   z-index: 999;
+  display: none;
 }
 
 @media -sass-debug-info {
@@ -804,12 +805,12 @@ body {
 .popup-overlay .register-popup {
   border-radius: 4px;
   width: 430px;
-  height: 520px;
+  height: 500px;
   background: #fff;
   margin: 0 auto;
   position: relative;
   top: 50%;
-  margin-top: -260px;
+  margin-top: -250px;
   overflow: hidden;
 }
 
@@ -824,8 +825,8 @@ body {
 }
 
 .popup-overlay .register-popup.register {
-  height: 600px;
-  margin-top: -300px;
+  height: 580px;
+  margin-top: -290px;
 }
 
 @media -sass-debug-info {
@@ -911,7 +912,7 @@ body {
 
 .popup-overlay .register-popup .popup-content input[type="text"],
 .popup-overlay .register-popup .popup-content input[type="password"] {
-  width: 280px;
+  width: 270px;
 }
 
 @media -sass-debug-info {
@@ -935,6 +936,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 @media -sass-debug-info {
@@ -943,7 +945,7 @@ body {
   }
 
   line {
-    font-family: \00003395;
+    font-family: \00003396;
   }
 }
 
@@ -960,7 +962,7 @@ body {
   }
 
   line {
-    font-family: \00003402;
+    font-family: \00003403;
   }
 }
 
@@ -976,7 +978,7 @@ body {
   }
 
   line {
-    font-family: \00003408;
+    font-family: \00003409;
   }
 }
 
@@ -990,7 +992,7 @@ body {
   }
 
   line {
-    font-family: \00003411;
+    font-family: \00003412;
   }
 }
 
@@ -1016,7 +1018,7 @@ body {
   }
 
   line {
-    font-family: \00003426;
+    font-family: \00003427;
   }
 }
 
@@ -1030,11 +1032,11 @@ body {
   }
 
   line {
-    font-family: \00003433;
+    font-family: \00003434;
   }
 }
 
-.popup-overlay .register-popup .popup-content .popup-content-auth {
+.popup-overlay .register-popup .popup-content .popup-content-register {
   display: none;
 }
 
@@ -1044,7 +1046,134 @@ body {
   }
 
   line {
-    font-family: \00003444;
+    font-family: \00003440;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register #day,
+.popup-overlay .register-popup .popup-content .popup-content-register #month,
+.popup-overlay .register-popup .popup-content .popup-content-register #year {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 7px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003447;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register #day {
+  width: 47px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003450;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register #month {
+  width: 125px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003453;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register #year {
+  width: 55px;
+  margin-right: 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003458;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register .want-to-know {
+  margin: 25px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003462;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register .i-agree {
+  width: 320px;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003466;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register .i-agree a {
+  color: #226dce;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(34, 109, 206, 0.5);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003474;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-register .control-group.submit input[type="submit"] {
+  width: 196px;
+  float: none;
+  margin: 30px auto 0px auto;
+  display: block;
+  background: url("../img/main/register.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003492;
   }
 }
 
@@ -1058,7 +1187,7 @@ form .control-group {
   }
 
   line {
-    font-family: \00003447;
+    font-family: \00003495;
   }
 }
 
@@ -1075,7 +1204,7 @@ form .control-group label {
   }
 
   line {
-    font-family: \00003454;
+    font-family: \00003502;
   }
 }
 
@@ -1097,7 +1226,74 @@ form .control-group input[type="password"] {
   }
 
   line {
-    font-family: \00003467;
+    font-family: \00003513;
+  }
+}
+
+form .control-group select {
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.52) 0px 0px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.52) 0px 0px 3px inset;
+  cursor: pointer;
+  height: 32px;
+  outline: none;
+  border: none;
+  background: #fff;
+  padding: 0px 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003524;
+  }
+}
+
+form .control-group input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003528;
+  }
+}
+
+form .control-group input[type="checkbox"] + label {
+  background: url("../img/main/checkbox.png") 0 0 no-repeat;
+  padding-left: 20px;
+  line-height: 16px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003533;
+  }
+}
+
+form .control-group input[type="checkbox"]:checked + label {
+  background-position: 0 -16px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003539;
   }
 }
 

@@ -330,22 +330,22 @@ body {
   height: 100%;
   background: rgba(#120f10, 0.65);
   z-index: 999;
-  // display: none;
+  display: none;
 
   .register-popup {
     @include border-radius(4px);
     width: 430px;
-    height: 520px;
+    height: 500px;
     background: #fff;
     margin: 0 auto;
     position: relative;
     top: 50%;
-    margin-top: -260px;
+    margin-top: -250px;
     overflow: hidden;
 
     &.register {
-      height: 600px;
-      margin-top: -300px;
+      height: 580px;
+      margin-top: -290px;
     }
 
     .tabs {
@@ -376,7 +376,7 @@ body {
 
       input[type="text"],
       input[type="password"] {
-        width: 280px;
+        width: 270px;
       }
 
       input[type="submit"] {
@@ -390,6 +390,7 @@ body {
         text-transform: uppercase;
         font-size: 12px;
         font-weight: bold;
+        margin-right: 10px;
       }
 
       .forot-password {
@@ -430,9 +431,56 @@ body {
 
       }
 
-      .popup-content-auth {
+      .popup-content-register {
         display: none;
       }
+
+      .popup-content-register {
+
+        #day,
+        #month,
+        #year {
+          @include inline-block;
+          margin-right: 7px;
+        }
+
+        #day {
+          width: 47px;
+        }
+        #month {
+          width: 125px;
+        }
+        #year {
+          width: 55px;
+          margin-right: 0px;
+        }
+
+        .want-to-know {
+          margin: 25px 0px;
+        }
+
+        .i-agree {
+          width: 320px;
+          line-height: 1.5;
+
+          a{
+            color: #226dce;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(#226dce, 0.5);
+          }
+        }
+
+        .control-group.submit {
+          input[type="submit"] {
+            width: 196px;
+            float: none;
+            margin: 30px auto 0px auto;
+            display: block;
+            background: url("../img/main/register.png");
+          }
+        }
+
+      }     
 
     }
 
@@ -460,6 +508,30 @@ form {
       padding: 0px 10px;
       background: #fff;
       border: none;
+    }
+
+    select {
+      @include border-radius(2px);
+      @include box-shadow(rgba(#000, .52) 0px 0px 3px inset);
+      cursor: pointer;
+      height: 32px;
+      outline: none;
+      border: none;
+      background: #fff;
+      padding: 0px 10px;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="checkbox"] + label {
+        background: url("../img/main/checkbox.png") 0 0 no-repeat;
+        padding-left: 20px;
+        line-height: 16px;
+    }
+    input[type="checkbox"]:checked + label {
+        background-position: 0 -16px;
     }
   }
 }

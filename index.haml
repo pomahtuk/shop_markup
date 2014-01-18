@@ -350,11 +350,11 @@
           %a.social-twitter{href: "#"}
 
     .popup-overlay
-      .register-popup.register
+      .register-popup.auth
         .tabs
-          %a.tab-link.auth{href: "#"}
+          %a.tab-link.auth.active{href: "#"}
             авторизация
-          %a.tab-link.register.active{href: "#"}
+          %a.tab-link.register{href: "#"}
             регистрация
         .popup-content
           .popup-content-auth
@@ -393,13 +393,46 @@
               .control-group
                 %label{for: "birth"}
                   Дата рождения
-                %input#day{type: "text", name: "day"}
-                %input#month{type: "text", name: "month"}
-                %input#year{type: "text", name: "year"}
-              .control-group.agree
-                Нажимая кнопку «Регистрация» я подтверждаю свое согласие с 
-                %a.legal{href:"#"}
-                  Условиями продажи
+                %input#day{type: "text", name: "day", placeholder: "день"}
+                %select#month{name: "month"}
+                  %option{disabled:"", selected: "selected"}
+                    месяц
+                  %option{value: "01"}
+                    Январь
+                  %option{value: "02"}
+                    Февраль
+                  %option{value: "03"}
+                    Март
+                  %option{value: "04"}
+                    Апрель
+                  %option{value: "05"}
+                    Май
+                  %option{value: "06"}
+                    Июнь
+                  %option{value: "07"}
+                    Июль
+                  %option{value: "08"}
+                    Август
+                  %option{value: "09"}
+                    Сентябрь
+                  %option{value: "10"}
+                    Октябрь
+                  %option{value: "11"}
+                    Ноябрь
+                  %option{value: "12"}
+                    Декабрь
+                / %input#month{type: "text", name: "month", placeholder: "месяц"}
+                %input#year{type: "text", name: "year", placeholder: "год"}
+              .control-group.misc
+                .want-to-know
+                  %input#want{type: "checkbox", name: "want"}
+                  %label{for: "want"}
+                    Хочу знать об интересных предложениях
+                .i-agree
+                  Нажимая кнопку «Регистрация» я подтверждаю свое согласие с 
+                  %a.legal{href:"#"}
+                    Условиями продажи
+              .control-group.submit
                 %input{type: "submit", value: "Зарегистрироваться"}
 
     %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
