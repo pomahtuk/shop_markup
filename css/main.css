@@ -770,3 +770,337 @@ body {
   font-size: 18px;
   border-bottom: 1px solid rgba(36, 111, 208, 0.5);
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003325;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 15, 16, 0.65);
+  z-index: 999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003335;
+  }
+}
+
+.popup-overlay .register-popup {
+  border-radius: 4px;
+  width: 430px;
+  height: 520px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -260px;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003346;
+  }
+}
+
+.popup-overlay .register-popup.register {
+  height: 600px;
+  margin-top: -300px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003351;
+  }
+}
+
+.popup-overlay .register-popup .tabs {
+  height: 60px;
+  font-size: 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003355;
+  }
+}
+
+.popup-overlay .register-popup .tabs .tab-link {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 50%;
+  background: #e8eff3;
+  height: 100%;
+  text-decoration: none;
+  font-size: 14px;
+  color: #7c858a;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003367;
+  }
+}
+
+.popup-overlay .register-popup .tabs .tab-link.active {
+  background: #fff;
+  color: #2e2d2e;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003374;
+  }
+}
+
+.popup-overlay .register-popup .popup-content {
+  padding: 40px 65px 40px 65px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003377;
+  }
+}
+
+.popup-overlay .register-popup .popup-content input[type="text"],
+.popup-overlay .register-popup .popup-content input[type="password"] {
+  width: 280px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003382;
+  }
+}
+
+.popup-overlay .register-popup .popup-content input[type="submit"] {
+  float: right;
+  border: none;
+  outline: none;
+  background: url("../img/main/search.png");
+  height: 31px;
+  width: 82px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003395;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .forot-password {
+  color: #216ccc;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(33, 108, 204, 0.5);
+  line-height: 31px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003402;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .control-group.enter {
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #e8eff3;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003408;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .social-login {
+  margin-top: 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003411;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .social-login .social-login-button {
+  display: block;
+  margin: 0px auto 17px auto;
+  height: 50px;
+  width: 234px;
+  padding-left: 48px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.48) 0 1px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 50px;
+  background: url("../img/main/social_login.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003426;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .social-login .social-login-button.vk {
+  background-position: 0px -67px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003433;
+  }
+}
+
+.popup-overlay .register-popup .popup-content .popup-content-auth {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003444;
+  }
+}
+
+form .control-group {
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003447;
+  }
+}
+
+form .control-group label {
+  font-size: 14px;
+  color: #2e2d2e;
+  display: block;
+  margin-bottom: 7px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003454;
+  }
+}
+
+form .control-group input[type="text"],
+form .control-group input[type="password"] {
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.52) 0px 0px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.52) 0px 0px 3px inset;
+  display: block;
+  height: 32px;
+  padding: 0px 10px;
+  background: #fff;
+  border: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003467;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}

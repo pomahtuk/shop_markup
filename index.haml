@@ -349,6 +349,59 @@
           %a.social-facebook{href: "#"}
           %a.social-twitter{href: "#"}
 
+    .popup-overlay
+      .register-popup.register
+        .tabs
+          %a.tab-link.auth{href: "#"}
+            авторизация
+          %a.tab-link.register.active{href: "#"}
+            регистрация
+        .popup-content
+          .popup-content-auth
+            %form
+              .control-group
+                %label{for: "email"}
+                  Электронная почта
+                %input#email{type: "text", name: "email"}
+              .control-group
+                %label{for: "password"}
+                  Пароль
+                %input#password{type: "password", name: "password"}
+              .control-group.enter
+                %a.forot-password{href: "#"}
+                  Я забыл пароль
+                %input{type: "submit", value: "Войти"}
+            .social-login
+              %a.social-login-button.fb{href: "#"}
+                Войти с помощью Facebook
+              %a.social-login-button.vk{href: "#"}
+                Войти с помощью Вконтакте
+          .popup-content-register
+            %form
+              .control-group
+                %label{for: "name"}
+                  Имя и фамилия
+                %input#name{type: "text", name: "name"}
+              .control-group
+                %label{for: "phone"}
+                  Телефон
+                %input#phone{type: "text", name: "phone"}
+              .control-group
+                %label{for: "email"}
+                  Электронная почта
+                %input#email{type: "text", name: "email"}
+              .control-group
+                %label{for: "birth"}
+                  Дата рождения
+                %input#day{type: "text", name: "day"}
+                %input#month{type: "text", name: "month"}
+                %input#year{type: "text", name: "year"}
+              .control-group.agree
+                Нажимая кнопку «Регистрация» я подтверждаю свое согласие с 
+                %a.legal{href:"#"}
+                  Условиями продажи
+                %input{type: "submit", value: "Зарегистрироваться"}
+
     %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     %script{src: "js/plugins.js"}
     %script{src: "js/main.js"}
