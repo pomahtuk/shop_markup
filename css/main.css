@@ -283,10 +283,7 @@ body {
   }
 }
 
-.banners .full-banners {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.banners .full-banners-container {
   width: 652px;
   height: 460px;
   overflow: hidden;
@@ -298,7 +295,54 @@ body {
   }
 
   line {
-    font-family: \00003111;
+    font-family: \00003108;
+  }
+}
+
+.banners .full-banners {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 9999px;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.banners .full-banners .single-banner {
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003118;
+  }
+}
+
+.banners .full-banners .single-banner img {
+  width: 652px;
+  height: 460px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003125;
   }
 }
 
@@ -316,7 +360,7 @@ body {
   }
 
   line {
-    font-family: \00003118;
+    font-family: \00003132;
   }
 }
 
@@ -337,7 +381,7 @@ body {
   }
 
   line {
-    font-family: \00003130;
+    font-family: \00003144;
   }
 }
 
@@ -352,7 +396,7 @@ body {
   }
 
   line {
-    font-family: \00003135;
+    font-family: \00003149;
   }
 }
 
@@ -367,17 +411,15 @@ body {
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003154;
   }
 }
 
-.banners .banners-navigation .banners-preview {
-  list-style: none;
+.banners .banners-navigation .banners-preview-container {
   width: 585px;
   height: 51px;
-  overflow: hidden;
   margin: 0 auto;
-  padding: 0px;
+  overflow: hidden;
 }
 
 @media -sass-debug-info {
@@ -386,7 +428,39 @@ body {
   }
 
   line {
-    font-family: \00003148;
+    font-family: \00003161;
+  }
+}
+
+.banners .banners-navigation .banners-preview {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  position: relative;
+  width: 9999px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003168;
+  }
+}
+
+.banners .banners-navigation .banners-preview .single-banner-preview {
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003171;
   }
 }
 
@@ -414,7 +488,7 @@ body {
   }
 
   line {
-    font-family: \00003165;
+    font-family: \00003188;
   }
 }
 
@@ -429,7 +503,22 @@ body {
   }
 
   line {
-    font-family: \00003173;
+    font-family: \00003195;
+  }
+}
+
+.banners .banners-navigation .banners-preview .single-banner-preview.active a {
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003204;
   }
 }
 
@@ -456,7 +545,7 @@ body {
   }
 
   line {
-    font-family: \00003192;
+    font-family: \00003223;
   }
 }
 
@@ -475,7 +564,7 @@ body {
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003231;
   }
 }
 
@@ -502,7 +591,7 @@ body {
   }
 
   line {
-    font-family: \00003213;
+    font-family: \00003244;
   }
 }
 
@@ -517,7 +606,7 @@ body {
   }
 
   line {
-    font-family: \00003220;
+    font-family: \00003251;
   }
 }
 
@@ -532,7 +621,7 @@ body {
   }
 
   line {
-    font-family: \00003224;
+    font-family: \00003255;
   }
 }
 
@@ -552,7 +641,7 @@ body {
   }
 
   line {
-    font-family: \00003234;
+    font-family: \00003265;
   }
 }
 
@@ -566,7 +655,7 @@ body {
   }
 
   line {
-    font-family: \00003239;
+    font-family: \00003270;
   }
 }
 
@@ -580,7 +669,7 @@ body {
   }
 
   line {
-    font-family: \00003241;
+    font-family: \00003272;
   }
 }
 
@@ -597,7 +686,7 @@ body {
   }
 
   line {
-    font-family: \00003249;
+    font-family: \00003280;
   }
 }
 
@@ -611,7 +700,7 @@ body {
   }
 
   line {
-    font-family: \00003251;
+    font-family: \00003282;
   }
 }
 
@@ -628,7 +717,7 @@ body {
   }
 
   line {
-    font-family: \00003259;
+    font-family: \00003290;
   }
 }
 
@@ -655,7 +744,7 @@ body {
   }
 
   line {
-    font-family: \00003270;
+    font-family: \00003301;
   }
 }
 
@@ -671,7 +760,7 @@ body {
   }
 
   line {
-    font-family: \00003276;
+    font-family: \00003307;
   }
 }
 
@@ -689,7 +778,7 @@ body {
   }
 
   line {
-    font-family: \00003284;
+    font-family: \00003315;
   }
 }
 
@@ -709,7 +798,27 @@ body {
   }
 
   line {
-    font-family: \00003293;
+    font-family: \00003324;
+  }
+}
+
+.single-good-item .single-good-item-custmer .old-price {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  font-size: 11px;
+  font-family: 'proxima_nova_rgbold';
+  color: #b4b4b4;
+  text-decoration: line-through;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003334;
   }
 }
 
@@ -732,7 +841,7 @@ body {
   }
 
   line {
-    font-family: \00003302;
+    font-family: \00003343;
   }
 }
 
@@ -760,7 +869,7 @@ body {
   }
 
   line {
-    font-family: \00003318;
+    font-family: \00003359;
   }
 }
 
@@ -777,7 +886,7 @@ body {
   }
 
   line {
-    font-family: \00003325;
+    font-family: \00003366;
   }
 }
 
@@ -798,7 +907,7 @@ body {
   }
 
   line {
-    font-family: \00003335;
+    font-family: \00003376;
   }
 }
 
@@ -820,7 +929,7 @@ body {
   }
 
   line {
-    font-family: \00003346;
+    font-family: \00003387;
   }
 }
 
@@ -835,7 +944,7 @@ body {
   }
 
   line {
-    font-family: \00003351;
+    font-family: \00003392;
   }
 }
 
@@ -850,7 +959,7 @@ body {
   }
 
   line {
-    font-family: \00003355;
+    font-family: \00003396;
   }
 }
 
@@ -877,7 +986,7 @@ body {
   }
 
   line {
-    font-family: \00003367;
+    font-family: \00003408;
   }
 }
 
@@ -892,7 +1001,7 @@ body {
   }
 
   line {
-    font-family: \00003374;
+    font-family: \00003415;
   }
 }
 
@@ -906,7 +1015,7 @@ body {
   }
 
   line {
-    font-family: \00003377;
+    font-family: \00003418;
   }
 }
 
@@ -921,7 +1030,7 @@ body {
   }
 
   line {
-    font-family: \00003382;
+    font-family: \00003423;
   }
 }
 
@@ -945,7 +1054,7 @@ body {
   }
 
   line {
-    font-family: \00003396;
+    font-family: \00003437;
   }
 }
 
@@ -962,7 +1071,7 @@ body {
   }
 
   line {
-    font-family: \00003403;
+    font-family: \00003444;
   }
 }
 
@@ -978,7 +1087,7 @@ body {
   }
 
   line {
-    font-family: \00003409;
+    font-family: \00003450;
   }
 }
 
@@ -992,7 +1101,7 @@ body {
   }
 
   line {
-    font-family: \00003412;
+    font-family: \00003453;
   }
 }
 
@@ -1018,7 +1127,7 @@ body {
   }
 
   line {
-    font-family: \00003427;
+    font-family: \00003468;
   }
 }
 
@@ -1032,7 +1141,7 @@ body {
   }
 
   line {
-    font-family: \00003434;
+    font-family: \00003475;
   }
 }
 
@@ -1046,7 +1155,7 @@ body {
   }
 
   line {
-    font-family: \00003440;
+    font-family: \00003481;
   }
 }
 
@@ -1067,7 +1176,7 @@ body {
   }
 
   line {
-    font-family: \00003447;
+    font-family: \00003488;
   }
 }
 
@@ -1081,7 +1190,7 @@ body {
   }
 
   line {
-    font-family: \00003450;
+    font-family: \00003491;
   }
 }
 
@@ -1095,7 +1204,7 @@ body {
   }
 
   line {
-    font-family: \00003453;
+    font-family: \00003494;
   }
 }
 
@@ -1110,7 +1219,7 @@ body {
   }
 
   line {
-    font-family: \00003458;
+    font-family: \00003499;
   }
 }
 
@@ -1124,7 +1233,7 @@ body {
   }
 
   line {
-    font-family: \00003462;
+    font-family: \00003503;
   }
 }
 
@@ -1139,7 +1248,7 @@ body {
   }
 
   line {
-    font-family: \00003466;
+    font-family: \00003507;
   }
 }
 
@@ -1155,7 +1264,7 @@ body {
   }
 
   line {
-    font-family: \00003474;
+    font-family: \00003515;
   }
 }
 
@@ -1173,7 +1282,7 @@ body {
   }
 
   line {
-    font-family: \00003492;
+    font-family: \00003533;
   }
 }
 
@@ -1187,7 +1296,7 @@ form .control-group {
   }
 
   line {
-    font-family: \00003495;
+    font-family: \00003536;
   }
 }
 
@@ -1204,7 +1313,7 @@ form .control-group label {
   }
 
   line {
-    font-family: \00003502;
+    font-family: \00003543;
   }
 }
 
@@ -1226,7 +1335,7 @@ form .control-group input[type="password"] {
   }
 
   line {
-    font-family: \00003513;
+    font-family: \00003554;
   }
 }
 
@@ -1248,7 +1357,7 @@ form .control-group select {
   }
 
   line {
-    font-family: \00003524;
+    font-family: \00003565;
   }
 }
 
@@ -1263,7 +1372,7 @@ form .control-group input[type="checkbox"] {
   }
 
   line {
-    font-family: \00003528;
+    font-family: \00003569;
   }
 }
 
@@ -1279,7 +1388,7 @@ form .control-group input[type="checkbox"] + label {
   }
 
   line {
-    font-family: \00003533;
+    font-family: \00003574;
   }
 }
 
@@ -1293,7 +1402,7 @@ form .control-group input[type="checkbox"]:checked + label {
   }
 
   line {
-    font-family: \00003539;
+    font-family: \00003580;
   }
 }
 

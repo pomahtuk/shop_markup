@@ -172,44 +172,54 @@
           .banner-container
             %a.all-deals{href: "#"} 
               Все акции
-            %ul.full-banners
-              %li.single-banner
-                %img{src: "./img/markup/banner.png"}
-              %li.single-banner
-                %img{src: "http://placehold.it/652x460"}
+            .full-banners-container
+              %ul.full-banners
+                %li.single-banner{data:{index: 0}}
+                  %img{src: "./img/markup/banner.png"}
+                %li.single-banner{data:{index: 1}}
+                  %img{src: "http://placehold.it/652x461"}
+                %li.single-banner{data:{index: 2}}
+                  %img{src: "http://placehold.it/652x462"}
+                %li.single-banner{data:{index: 3}}
+                  %img{src: "http://placehold.it/652x463"}
+                %li.single-banner{data:{index: 4}}
+                  %img{src: "http://placehold.it/652x464"}
+                %li.single-banner{data:{index: 5}}
+                  %img{src: "http://placehold.it/652x465"}
             .banners-navigation
               %a.prev-banner{href: "#"}
-              %ul.banners-preview
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
+              .banners-preview-container
+                %ul.banners-preview
+                  %li.single-banner-preview.active{data:{index: 0}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 0
+                  %li.single-banner-preview{data:{index: 1}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 1
+                  %li.single-banner-preview{data:{index: 2}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 2
+                  %li.single-banner-preview{data:{index: 3}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 3
+                  %li.single-banner-preview{data:{index: 4}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 4
+                  %li.single-banner-preview{data:{index: 5}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 5
               %a.next-banner{href: "#"}
 
       .new-goods
@@ -221,6 +231,8 @@
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
+              %span.old-price
+                34 000
               %span.price 
                 32 990 
                 %i.ruble-bold
