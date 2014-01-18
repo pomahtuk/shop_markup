@@ -1,48 +1,5 @@
 @import "compass";
-
-$borderColor: #efefef;
-$headingsColor: #393838;
-$newsDateColor: #757373;
-$boldTextColor: #2b2a2a;
-$itemTitleColor: #2e2d2e;
-$linkColor: #246fd0;
-$frameColor: #ffd503;
-
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
-    src: url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
-         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
-         url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima_nova_ltlight';
-    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot');
-    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff'),
-         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.ttf') format('truetype'),
-         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
-    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
-         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
-         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import "./base";
 
 body {
   background: #fff;

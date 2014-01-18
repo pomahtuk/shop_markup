@@ -1,10 +1,34 @@
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot");
+  src: url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("../fonts/mark_simonson_-_proxima_nova_light-webfont.eot");
+  src: url("../fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mark_simonson_-_proxima_nova_light-webfont.woff") format("woff"), url("../fonts/mark_simonson_-_proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot");
+  src: url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff") format("woff"), url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf") format("truetype"), url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media -sass-debug-info {
   filename {
     font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
   }
 
   line {
-    font-family: \000033;
+    font-family: \000034;
   }
 }
 
@@ -19,7 +43,7 @@ header {
   }
 
   line {
-    font-family: \000037;
+    font-family: \000038;
   }
 }
 
@@ -34,7 +58,7 @@ header .top-info {
   }
 
   line {
-    font-family: \0000311;
+    font-family: \0000312;
   }
 }
 
@@ -51,7 +75,7 @@ header .top-info .top-info-content {
   }
 
   line {
-    font-family: \0000317;
+    font-family: \0000318;
   }
 }
 
@@ -71,7 +95,7 @@ header .top-info .top-info-content .cities {
   }
 
   line {
-    font-family: \0000322;
+    font-family: \0000323;
   }
 }
 
@@ -87,7 +111,7 @@ header .top-info .top-info-content .cities .current-city {
   }
 
   line {
-    font-family: \0000328;
+    font-family: \0000329;
   }
 }
 
@@ -104,7 +128,7 @@ header .top-info .top-info-content .cities .rest-cities {
   }
 
   line {
-    font-family: \0000336;
+    font-family: \0000337;
   }
 }
 
@@ -124,7 +148,7 @@ header .top-info .top-info-content .links {
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000342;
   }
 }
 
@@ -140,7 +164,7 @@ header .top-info .top-info-content .links a {
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000348;
   }
 }
 
@@ -156,7 +180,7 @@ header .top-info .top-info-content .links .enter-link {
   }
 
   line {
-    font-family: \0000353;
+    font-family: \0000354;
   }
 }
 
@@ -171,7 +195,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000358;
+    font-family: \0000359;
   }
 }
 
@@ -186,7 +210,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000362;
+    font-family: \0000363;
   }
 }
 
@@ -195,9 +219,506 @@ header .top-info .top-info-content .links .basket-link:before {
   position: absolute;
   top: 0px;
   left: -20px;
-  width: 10px;
+  width: 15px;
   height: 15px;
   display: block;
   content: "";
-  border: 1px solid red;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+header .top-info .top-info-content .links .enter-link:before {
+  background: url("../img/main/mincro_sprite.png") -21px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000378;
+  }
+}
+
+header .top-info .top-info-content .links .basket-link:before {
+  width: 16px;
+  left: -22px;
+  background: url("../img/main/mincro_sprite.png") -41px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+header .logo-info-search {
+  height: 55px;
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0px 30px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000397;
+  }
+}
+
+header .logo-info-search:after {
+  position: absolute;
+  bottom: -8px;
+  left: -36px;
+  display: block;
+  height: 8px;
+  width: 1012px;
+  content: "";
+  background: url("../img/main/bottom_shadow.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003108;
+  }
+}
+
+header .logo-info-search .logo {
+  float: left;
+  margin: 0px 80px 0px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003113;
+  }
+}
+
+header .logo-info-search .phone {
+  font-family: 'proxima_nova_ltlight';
+  font-size: 24px;
+  color: #494c4e;
+  line-height: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003120;
+  }
+}
+
+header .logo-info-search .our-shops {
+  margin-left: 60px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3581e5;
+  border-bottom: 1px solid rgba(53, 129, 229, 0.5);
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003128;
+  }
+}
+
+header .logo-info-search .our-shops:before {
+  position: absolute;
+  top: 0px;
+  left: -19px;
+  display: block;
+  height: 17px;
+  width: 13px;
+  content: "";
+  background: url("../img/main/mincro_sprite.png") 0px -20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003140;
+  }
+}
+
+header .logo-info-search .search-form {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 30px;
+  width: 380px;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003146;
+  }
+}
+
+header .logo-info-search .search-form:before {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url("../img/main/mincro_sprite.png") 0px 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003157;
+  }
+}
+
+header .logo-info-search .search-form .search-box {
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px inset;
+  width: 245px;
+  height: 32px;
+  background: #fff;
+  border: 0;
+  padding: 0px 10px 0px 35px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003167;
+  }
+}
+
+header .logo-info-search .search-form .search-submit {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 82px;
+  height: 31px;
+  padding: 0;
+  border: none;
+  background: url("../img/main/search.png");
+  color: #fff;
+  outline: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003184;
+  }
+}
+
+header .main-menu-container {
+  width: 965px;
+  margin: 20px auto 0px auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003188;
+  }
+}
+
+header .main-menu-container .main-menu {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003194;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-align: center;
+  margin-right: 19px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003199;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link {
+  background: url("../img/main/main_menu.png") no-repeat;
+  height: 25px;
+  padding-top: 55px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #292929;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003209;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo {
+  background-position-x: 20px;
+  width: 80px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003213;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens {
+  background-position-x: -80px;
+  width: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003217;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash {
+  background-position-x: -165px;
+  width: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003221;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesorize {
+  background-position-x: -240px;
+  width: 62px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003225;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
+  background-position-x: -330px;
+  width: 52px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003229;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable {
+  background-position-x: -408px;
+  width: 68px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003233;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials {
+  background-position-x: -505px;
+  width: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003237;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio {
+  background-position-x: -585px;
+  width: 80px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003241;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.used {
+  background-position-x: -686px;
+  width: 48px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003245;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc {
+  background-position-x: -765px;
+  width: 42px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003249;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link:hover {
+  background-position-y: -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003256;
+  }
+}
+
+header .main-menu-container .photo-service {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 124px;
+  height: 25px;
+  background: url("../img/main/photo_service.png");
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 68px;
+  margin-left: 9px;
 }
