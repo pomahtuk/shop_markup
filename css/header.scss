@@ -142,6 +142,8 @@ header {
       margin-left: 30px;
       width: 380px;
       position: relative;
+      float: right;
+      margin-top: 16px;
 
       &:before{
         position: absolute;
@@ -162,6 +164,7 @@ header {
         background: #fff;
         border: 0;
         padding: 0px 10px 0px 35px;
+        vertical-align: center;
       }
 
       .search-submit {
@@ -176,6 +179,9 @@ header {
         background: url("../img/main/search.png");
         color: #fff;
         outline: none;
+        vertical-align: center;
+        position: relative;
+        top: -1px;
       }
     }
 
@@ -207,48 +213,75 @@ header {
           text-decoration: none;
 
           &.photo {
-            background-position-x: 20px;
+            background-position: 20px 0px;
             width: 80px;
+            &:hover{
+              background-position:  20px -119px;
+            }   
           }
           &.lens {
-            background-position-x: -80px;
+            background-position: -80px 0px;
             width: 60px;
+            &:hover{
+              background-position:  -80px -119px;
+            }   
           }
           &.flash {
-            background-position-x: -165px;
+            background-position: -165px 0px;
             width: 50px;
+            &:hover{
+              background-position:  -165px -119px;
+            } 
           }
           &.accesorize {
-            background-position-x: -240px;
+            background-position: -240px 0px;
             width: 62px;
+            &:hover{
+              background-position:  -240px -119px;
+            } 
           }
           &.storage {
-            background-position-x: -330px;
+            background-position: -330px 0px;
             width: 52px;
+            &:hover{
+              background-position:  -330px -119px;
+            } 
           }
           &.portable {
-            background-position-x: -408px;
+            background-position: -408px 0px;
             width: 68px;
+            &:hover{
+              background-position:  -408px -119px;
+            } 
           }
           &.materials {
-            background-position-x: -505px;
+            background-position: -505px 0px;
             width: 60px;
+            &:hover{
+              background-position:  -505px -119px;
+            } 
           }
           &.studio {
-            background-position-x: -585px;
+            background-position: -585px 0px;
             width: 80px;
+            &:hover{
+              background-position:  -585px -119px;
+            } 
           }
           &.used {
-            background-position-x: -686px;
+            background-position: -686px 0px;
             width: 48px;
+            &:hover{
+              background-position:  -686px -119px;
+            } 
           }
           &.misc {
-            background-position-x: -765px;
+            background-position: -765px 0px;
             width: 42px;
-          }
-          &:hover{
-            background-position-y: -119px;
-          }        
+            &:hover{
+              background-position:  -765px -119px;
+            } 
+          }     
         }
       }
     }

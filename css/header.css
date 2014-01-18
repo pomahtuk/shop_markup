@@ -393,6 +393,8 @@ header .logo-info-search .search-form {
   margin-left: 30px;
   width: 380px;
   position: relative;
+  float: right;
+  margin-top: 16px;
 }
 
 @media -sass-debug-info {
@@ -401,7 +403,7 @@ header .logo-info-search .search-form {
   }
 
   line {
-    font-family: \00003146;
+    font-family: \00003148;
   }
 }
 
@@ -422,7 +424,7 @@ header .logo-info-search .search-form:before {
   }
 
   line {
-    font-family: \00003157;
+    font-family: \00003159;
   }
 }
 
@@ -435,6 +437,7 @@ header .logo-info-search .search-form .search-box {
   background: #fff;
   border: 0;
   padding: 0px 10px 0px 35px;
+  vertical-align: center;
 }
 
 @media -sass-debug-info {
@@ -443,7 +446,7 @@ header .logo-info-search .search-form .search-box {
   }
 
   line {
-    font-family: \00003167;
+    font-family: \00003170;
   }
 }
 
@@ -459,6 +462,9 @@ header .logo-info-search .search-form .search-submit {
   background: url("../img/main/search.png");
   color: #fff;
   outline: none;
+  vertical-align: center;
+  position: relative;
+  top: -1px;
 }
 
 @media -sass-debug-info {
@@ -467,7 +473,7 @@ header .logo-info-search .search-form .search-submit {
   }
 
   line {
-    font-family: \00003184;
+    font-family: \00003190;
   }
 }
 
@@ -482,7 +488,7 @@ header .main-menu-container {
   }
 
   line {
-    font-family: \00003188;
+    font-family: \00003194;
   }
 }
 
@@ -503,7 +509,7 @@ header .main-menu-container .main-menu {
   }
 
   line {
-    font-family: \00003194;
+    font-family: \00003200;
   }
 }
 
@@ -523,7 +529,7 @@ header .main-menu-container .main-menu .main-menu-item {
   }
 
   line {
-    font-family: \00003199;
+    font-family: \00003205;
   }
 }
 
@@ -544,12 +550,12 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link {
   }
 
   line {
-    font-family: \00003209;
+    font-family: \00003215;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo {
-  background-position-x: 20px;
+  background-position: 20px 0px;
   width: 80px;
 }
 
@@ -559,43 +565,27 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo {
   }
 
   line {
-    font-family: \00003213;
+    font-family: \00003218;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo:hover {
+  background-position: 20px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003222;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens {
-  background-position-x: -80px;
+  background-position: -80px 0px;
   width: 60px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
-  }
-
-  line {
-    font-family: \00003217;
-  }
-}
-
-header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash {
-  background-position-x: -165px;
-  width: 50px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
-  }
-
-  line {
-    font-family: \00003221;
-  }
-}
-
-header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesorize {
-  background-position-x: -240px;
-  width: 62px;
 }
 
 @media -sass-debug-info {
@@ -608,9 +598,8 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesoriz
   }
 }
 
-header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
-  background-position-x: -330px;
-  width: 52px;
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens:hover {
+  background-position: -80px -119px;
 }
 
 @media -sass-debug-info {
@@ -623,8 +612,95 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
   }
 }
 
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash {
+  background-position: -165px 0px;
+  width: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003232;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash:hover {
+  background-position: -165px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003236;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesorize {
+  background-position: -240px 0px;
+  width: 62px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003239;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesorize:hover {
+  background-position: -240px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003243;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
+  background-position: -330px 0px;
+  width: 52px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003246;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage:hover {
+  background-position: -330px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003250;
+  }
+}
+
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable {
-  background-position-x: -408px;
+  background-position: -408px 0px;
   width: 68px;
 }
 
@@ -634,12 +710,26 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable 
   }
 
   line {
-    font-family: \00003233;
+    font-family: \00003253;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable:hover {
+  background-position: -408px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003257;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials {
-  background-position-x: -505px;
+  background-position: -505px 0px;
   width: 60px;
 }
 
@@ -649,12 +739,26 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials
   }
 
   line {
-    font-family: \00003237;
+    font-family: \00003260;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials:hover {
+  background-position: -505px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003264;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio {
-  background-position-x: -585px;
+  background-position: -585px 0px;
   width: 80px;
 }
 
@@ -664,12 +768,26 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio {
   }
 
   line {
-    font-family: \00003241;
+    font-family: \00003267;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio:hover {
+  background-position: -585px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003271;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.used {
-  background-position-x: -686px;
+  background-position: -686px 0px;
   width: 48px;
 }
 
@@ -679,12 +797,26 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.used {
   }
 
   line {
-    font-family: \00003245;
+    font-family: \00003274;
+  }
+}
+
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.used:hover {
+  background-position: -686px -119px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003278;
   }
 }
 
 header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc {
-  background-position-x: -765px;
+  background-position: -765px 0px;
   width: 42px;
 }
 
@@ -694,12 +826,12 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc {
   }
 
   line {
-    font-family: \00003249;
+    font-family: \00003281;
   }
 }
 
-header .main-menu-container .main-menu .main-menu-item .main-menu-link:hover {
-  background-position-y: -119px;
+header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc:hover {
+  background-position: -765px -119px;
 }
 
 @media -sass-debug-info {
@@ -708,7 +840,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link:hover {
   }
 
   line {
-    font-family: \00003256;
+    font-family: \00003289;
   }
 }
 
