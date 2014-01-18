@@ -43,6 +43,8 @@
 header {
   margin-bottom: 20px;
   height: 255px;
+  position: relative;
+  z-index: 2;
 }
 
 @media -sass-debug-info {
@@ -51,7 +53,7 @@ header {
   }
 
   line {
-    font-family: \000038;
+    font-family: \0000310;
   }
 }
 
@@ -66,7 +68,7 @@ header .top-info {
   }
 
   line {
-    font-family: \0000312;
+    font-family: \0000314;
   }
 }
 
@@ -83,7 +85,7 @@ header .top-info .top-info-content {
   }
 
   line {
-    font-family: \0000318;
+    font-family: \0000320;
   }
 }
 
@@ -103,7 +105,7 @@ header .top-info .top-info-content .cities {
   }
 
   line {
-    font-family: \0000323;
+    font-family: \0000325;
   }
 }
 
@@ -119,7 +121,7 @@ header .top-info .top-info-content .cities .current-city {
   }
 
   line {
-    font-family: \0000329;
+    font-family: \0000331;
   }
 }
 
@@ -136,7 +138,7 @@ header .top-info .top-info-content .cities .rest-cities {
   }
 
   line {
-    font-family: \0000337;
+    font-family: \0000339;
   }
 }
 
@@ -156,7 +158,7 @@ header .top-info .top-info-content .links {
   }
 
   line {
-    font-family: \0000342;
+    font-family: \0000344;
   }
 }
 
@@ -172,7 +174,7 @@ header .top-info .top-info-content .links a {
   }
 
   line {
-    font-family: \0000348;
+    font-family: \0000350;
   }
 }
 
@@ -188,7 +190,7 @@ header .top-info .top-info-content .links .enter-link {
   }
 
   line {
-    font-family: \0000354;
+    font-family: \0000356;
   }
 }
 
@@ -203,7 +205,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000359;
+    font-family: \0000361;
   }
 }
 
@@ -218,7 +220,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000363;
+    font-family: \0000365;
   }
 }
 
@@ -239,7 +241,7 @@ header .top-info .top-info-content .links .basket-link:before {
   }
 
   line {
-    font-family: \0000374;
+    font-family: \0000376;
   }
 }
 
@@ -253,7 +255,7 @@ header .top-info .top-info-content .links .enter-link:before {
   }
 
   line {
-    font-family: \0000378;
+    font-family: \0000380;
   }
 }
 
@@ -269,7 +271,7 @@ header .top-info .top-info-content .links .basket-link:before {
   }
 
   line {
-    font-family: \0000390;
+    font-family: \0000392;
   }
 }
 
@@ -287,7 +289,7 @@ header .logo-info-search {
   }
 
   line {
-    font-family: \0000397;
+    font-family: \0000399;
   }
 }
 
@@ -308,7 +310,7 @@ header .logo-info-search:after {
   }
 
   line {
-    font-family: \00003108;
+    font-family: \00003110;
   }
 }
 
@@ -323,7 +325,7 @@ header .logo-info-search .logo {
   }
 
   line {
-    font-family: \00003113;
+    font-family: \00003115;
   }
 }
 
@@ -340,7 +342,7 @@ header .logo-info-search .phone {
   }
 
   line {
-    font-family: \00003120;
+    font-family: \00003122;
   }
 }
 
@@ -359,7 +361,7 @@ header .logo-info-search .our-shops {
   }
 
   line {
-    font-family: \00003128;
+    font-family: \00003130;
   }
 }
 
@@ -380,7 +382,7 @@ header .logo-info-search .our-shops:before {
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003142;
   }
 }
 
@@ -403,7 +405,7 @@ header .logo-info-search .search-form {
   }
 
   line {
-    font-family: \00003148;
+    font-family: \00003150;
   }
 }
 
@@ -424,7 +426,7 @@ header .logo-info-search .search-form:before {
   }
 
   line {
-    font-family: \00003159;
+    font-family: \00003161;
   }
 }
 
@@ -446,7 +448,7 @@ header .logo-info-search .search-form .search-box {
   }
 
   line {
-    font-family: \00003170;
+    font-family: \00003172;
   }
 }
 
@@ -473,13 +475,13 @@ header .logo-info-search .search-form .search-submit {
   }
 
   line {
-    font-family: \00003190;
+    font-family: \00003192;
   }
 }
 
 header .main-menu-container {
   width: 965px;
-  margin: 20px auto 0px auto;
+  margin: 15px auto 0px auto;
 }
 
 @media -sass-debug-info {
@@ -488,7 +490,7 @@ header .main-menu-container {
   }
 
   line {
-    font-family: \00003194;
+    font-family: \00003196;
   }
 }
 
@@ -509,7 +511,7 @@ header .main-menu-container .main-menu {
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003202;
   }
 }
 
@@ -529,7 +531,7 @@ header .main-menu-container .main-menu .main-menu-item {
   }
 
   line {
-    font-family: \00003205;
+    font-family: \00003207;
   }
 }
 
@@ -550,7 +552,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link {
   }
 
   line {
-    font-family: \00003215;
+    font-family: \00003217;
   }
 }
 
@@ -565,7 +567,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo {
   }
 
   line {
-    font-family: \00003218;
+    font-family: \00003220;
   }
 }
 
@@ -579,7 +581,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo:hov
   }
 
   line {
-    font-family: \00003222;
+    font-family: \00003224;
   }
 }
 
@@ -594,7 +596,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens {
   }
 
   line {
-    font-family: \00003225;
+    font-family: \00003227;
   }
 }
 
@@ -608,7 +610,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens:hove
   }
 
   line {
-    font-family: \00003229;
+    font-family: \00003231;
   }
 }
 
@@ -623,7 +625,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash {
   }
 
   line {
-    font-family: \00003232;
+    font-family: \00003234;
   }
 }
 
@@ -637,7 +639,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash:hov
   }
 
   line {
-    font-family: \00003236;
+    font-family: \00003238;
   }
 }
 
@@ -652,7 +654,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesoriz
   }
 
   line {
-    font-family: \00003239;
+    font-family: \00003241;
   }
 }
 
@@ -666,7 +668,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesoriz
   }
 
   line {
-    font-family: \00003243;
+    font-family: \00003245;
   }
 }
 
@@ -681,7 +683,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
   }
 
   line {
-    font-family: \00003246;
+    font-family: \00003248;
   }
 }
 
@@ -695,7 +697,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage:h
   }
 
   line {
-    font-family: \00003250;
+    font-family: \00003252;
   }
 }
 
@@ -710,7 +712,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable 
   }
 
   line {
-    font-family: \00003253;
+    font-family: \00003255;
   }
 }
 
@@ -724,7 +726,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable:
   }
 
   line {
-    font-family: \00003257;
+    font-family: \00003259;
   }
 }
 
@@ -739,7 +741,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials
   }
 
   line {
-    font-family: \00003260;
+    font-family: \00003262;
   }
 }
 
@@ -753,7 +755,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials
   }
 
   line {
-    font-family: \00003264;
+    font-family: \00003266;
   }
 }
 
@@ -768,7 +770,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio {
   }
 
   line {
-    font-family: \00003267;
+    font-family: \00003269;
   }
 }
 
@@ -782,7 +784,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio:ho
   }
 
   line {
-    font-family: \00003271;
+    font-family: \00003273;
   }
 }
 
@@ -797,7 +799,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.used {
   }
 
   line {
-    font-family: \00003274;
+    font-family: \00003276;
   }
 }
 
@@ -811,7 +813,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.used:hove
   }
 
   line {
-    font-family: \00003278;
+    font-family: \00003280;
   }
 }
 
@@ -826,7 +828,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc {
   }
 
   line {
-    font-family: \00003281;
+    font-family: \00003283;
   }
 }
 
@@ -840,7 +842,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc:hove
   }
 
   line {
-    font-family: \00003289;
+    font-family: \00003291;
   }
 }
 
@@ -861,4 +863,132 @@ header .main-menu-container .photo-service {
   text-align: center;
   padding-top: 68px;
   margin-left: 9px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003306;
+  }
+}
+
+header .main-menu-container .opened-menu {
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
+  display: table;
+  height: 410px;
+  padding: 25px;
+  margin-top: 10px;
+  background: #fff;
+  width: 100%;
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003317;
+  }
+}
+
+header .main-menu-container .opened-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  height: 410px;
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003324;
+  }
+}
+
+header .main-menu-container .opened-menu ul.active {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003329;
+  }
+}
+
+header .main-menu-container .opened-menu .opened-menu-colimn-1,
+header .main-menu-container .opened-menu .opened-menu-colimn-2,
+header .main-menu-container .opened-menu .opened-menu-colimn-3,
+header .main-menu-container .opened-menu .opened-menu-colimn-4 {
+  display: table-cell;
+  list-style: none;
+  margin: 0;
+  padding: 0 30px 0px 25px;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003339;
+  }
+}
+
+header .main-menu-container .opened-menu .opened-menu-colimn-1:after,
+header .main-menu-container .opened-menu .opened-menu-colimn-2:after,
+header .main-menu-container .opened-menu .opened-menu-colimn-3:after,
+header .main-menu-container .opened-menu .opened-menu-colimn-4:after {
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -6px;
+  width: 6px;
+  height: 434px;
+  content: "";
+  background: url("../img/main/opened_divider.png");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003351;
+  }
+}
+
+header .main-menu-container .opened-menu .opened-menu-colimn-1 {
+  padding-left: 0px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \00003355;
+  }
+}
+
+header .main-menu-container .opened-menu .opened-menu-colimn-4:after {
+  display: none;
 }

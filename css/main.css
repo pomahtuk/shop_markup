@@ -60,6 +60,7 @@ body {
 .content {
   width: 970px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 @media -sass-debug-info {
@@ -68,7 +69,7 @@ body {
   }
 
   line {
-    font-family: \0000316;
+    font-family: \0000317;
   }
 }
 
@@ -83,7 +84,7 @@ body {
   }
 
   line {
-    font-family: \0000320;
+    font-family: \0000321;
   }
 }
 
@@ -107,7 +108,7 @@ body {
   }
 
   line {
-    font-family: \0000330;
+    font-family: \0000331;
   }
 }
 
@@ -131,7 +132,7 @@ body {
   }
 
   line {
-    font-family: \0000342;
+    font-family: \0000343;
   }
 }
 
@@ -149,7 +150,7 @@ body {
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000351;
   }
 }
 
@@ -167,7 +168,7 @@ body {
   }
 
   line {
-    font-family: \0000358;
+    font-family: \0000359;
   }
 }
 
@@ -183,7 +184,7 @@ body {
   }
 
   line {
-    font-family: \0000363;
+    font-family: \0000364;
   }
 }
 
@@ -198,13 +199,15 @@ body {
   }
 
   line {
-    font-family: \0000367;
+    font-family: \0000368;
   }
 }
 
 .news .news-list .single-news img {
   float: left;
   margin: 0px 18px 0px 0px;
+  max-width: 77px;
+  max-height: 77px;
 }
 
 @media -sass-debug-info {
@@ -213,7 +216,7 @@ body {
   }
 
   line {
-    font-family: \0000372;
+    font-family: \0000375;
   }
 }
 
@@ -230,7 +233,7 @@ body {
   }
 
   line {
-    font-family: \0000379;
+    font-family: \0000382;
   }
 }
 
@@ -247,7 +250,7 @@ body {
   }
 
   line {
-    font-family: \0000385;
+    font-family: \0000388;
   }
 }
 
@@ -262,7 +265,7 @@ body {
   }
 
   line {
-    font-family: \0000395;
+    font-family: \0000398;
   }
 }
 
@@ -276,7 +279,7 @@ body {
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003102;
   }
 }
 
@@ -295,7 +298,7 @@ body {
   }
 
   line {
-    font-family: \00003108;
+    font-family: \00003111;
   }
 }
 
@@ -313,7 +316,7 @@ body {
   }
 
   line {
-    font-family: \00003115;
+    font-family: \00003118;
   }
 }
 
@@ -334,7 +337,7 @@ body {
   }
 
   line {
-    font-family: \00003127;
+    font-family: \00003130;
   }
 }
 
@@ -349,7 +352,7 @@ body {
   }
 
   line {
-    font-family: \00003132;
+    font-family: \00003135;
   }
 }
 
@@ -364,7 +367,7 @@ body {
   }
 
   line {
-    font-family: \00003137;
+    font-family: \00003140;
   }
 }
 
@@ -383,7 +386,7 @@ body {
   }
 
   line {
-    font-family: \00003145;
+    font-family: \00003148;
   }
 }
 
@@ -411,7 +414,7 @@ body {
   }
 
   line {
-    font-family: \00003162;
+    font-family: \00003165;
   }
 }
 
@@ -426,7 +429,7 @@ body {
   }
 
   line {
-    font-family: \00003170;
+    font-family: \00003173;
   }
 }
 
@@ -453,7 +456,7 @@ body {
   }
 
   line {
-    font-family: \00003189;
+    font-family: \00003192;
   }
 }
 
@@ -472,7 +475,7 @@ body {
   }
 
   line {
-    font-family: \00003197;
+    font-family: \00003200;
   }
 }
 
@@ -499,7 +502,7 @@ body {
   }
 
   line {
-    font-family: \00003210;
+    font-family: \00003213;
   }
 }
 
@@ -514,7 +517,7 @@ body {
   }
 
   line {
-    font-family: \00003217;
+    font-family: \00003220;
   }
 }
 
@@ -529,7 +532,7 @@ body {
   }
 
   line {
-    font-family: \00003221;
+    font-family: \00003224;
   }
 }
 
@@ -549,7 +552,7 @@ body {
   }
 
   line {
-    font-family: \00003231;
+    font-family: \00003234;
   }
 }
 
@@ -563,7 +566,7 @@ body {
   }
 
   line {
-    font-family: \00003236;
+    font-family: \00003239;
   }
 }
 
@@ -577,7 +580,7 @@ body {
   }
 
   line {
-    font-family: \00003238;
+    font-family: \00003241;
   }
 }
 
@@ -594,7 +597,7 @@ body {
   }
 
   line {
-    font-family: \00003246;
+    font-family: \00003249;
   }
 }
 
@@ -608,7 +611,7 @@ body {
   }
 
   line {
-    font-family: \00003248;
+    font-family: \00003251;
   }
 }
 
@@ -625,7 +628,7 @@ body {
   }
 
   line {
-    font-family: \00003256;
+    font-family: \00003259;
   }
 }
 
@@ -652,12 +655,14 @@ body {
   }
 
   line {
-    font-family: \00003267;
+    font-family: \00003270;
   }
 }
 
 .single-good-item .single-good-image {
   margin-bottom: 10px;
+  max-height: 125px;
+  max-width: 190px;
 }
 
 @media -sass-debug-info {
@@ -666,7 +671,7 @@ body {
   }
 
   line {
-    font-family: \00003271;
+    font-family: \00003276;
   }
 }
 
@@ -684,7 +689,7 @@ body {
   }
 
   line {
-    font-family: \00003279;
+    font-family: \00003284;
   }
 }
 
@@ -704,7 +709,7 @@ body {
   }
 
   line {
-    font-family: \00003288;
+    font-family: \00003293;
   }
 }
 
@@ -727,7 +732,7 @@ body {
   }
 
   line {
-    font-family: \00003297;
+    font-family: \00003302;
   }
 }
 
@@ -755,7 +760,7 @@ body {
   }
 
   line {
-    font-family: \00003313;
+    font-family: \00003318;
   }
 }
 
