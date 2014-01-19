@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    var animInProgress, animateToSlide, animationSpeed, authContent, caruselNavigation, caruselPreviews, caruselPreviewsContainer, caruselSlides, caruselSlidesContainer, currentSlideIndex, popup, popupContainer, popupTrigger, registerContent, tabLinks, visiblePreviewCount;
+    var animInProgress, animateToSlide, animationSpeed, authContent, caruselNavigation, caruselPreviews, caruselPreviewsContainer, caruselSlides, caruselSlidesContainer, citiesList, citiesTrigger, currentSlideIndex, popup, popupContainer, popupTrigger, registerContent, tabLinks, visiblePreviewCount;
     popup = $('.register-popup');
     popupContainer = $('.popup-overlay');
     popupTrigger = $('header > .top-info .enter-link');
@@ -35,6 +35,12 @@
       if (elem.hasClass('popup-overlay')) {
         return popupContainer.hide();
       }
+    });
+    citiesTrigger = $('.top-info-content > .cities > .current-city');
+    citiesList = $('.top-info-content > .cities > .rest-cities');
+    citiesTrigger.click(function(e) {
+      citiesList.toggle();
+      return false;
     });
     caruselSlides = $('.banner-container .full-banners > .single-banner');
     caruselSlidesContainer = $('.banner-container .full-banners');
@@ -94,8 +100,11 @@
             });
             return animInProgress = false;
           };
-          completePreviews = function() {
+          completePreviews = function(direction) {
             var neededPreviews, newPreviews, previewsLeftToDisplay;
+            if (direction == null) {
+              direction = 'forward';
+            }
             previewsLeftToDisplay = previewCount - targetPreview.index();
             neededPreviews = previewsLeftToDisplay <= visiblePreviewCount ? visiblePreviewCount - previewsLeftToDisplay + 1 : 0;
             if (neededPreviews > 0) {
@@ -123,7 +132,7 @@
             caruselSlidesContainer.animate({
               left: "-=" + slideWidth
             }, animationSpeed, animCallback);
-            return completePreviews();
+            return completePreviews('forward');
           } else {
             tempTargetSlide.insertBefore(currentSlide);
             caruselSlidesContainer.css({
@@ -132,7 +141,7 @@
             caruselSlidesContainer.animate({
               left: "+=" + slideWidth
             }, animationSpeed, animCallback);
-            return completePreviews();
+            return completePreviews('backward');
           }
         }
       }

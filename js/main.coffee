@@ -37,6 +37,18 @@ $ ->
     if elem.hasClass 'popup-overlay'
       popupContainer.hide()
 
+
+  #
+  # Cities dropdown part
+  #
+
+  citiesTrigger = $('.top-info-content > .cities > .current-city')
+  citiesList    = $('.top-info-content > .cities > .rest-cities')
+
+  citiesTrigger.click (e) ->
+    citiesList.toggle()
+    false
+
   #
   # Carusel part
   #
@@ -99,7 +111,7 @@ $ ->
           caruselSlidesContainer.css { left: "-#{ slideWidth * newIndex }px" }
           animInProgress = false
 
-        completePreviews = ->
+        completePreviews = (direction = 'forward') ->
           # FIXME: only one direction now, should be bi-directional
           previewsLeftToDisplay = previewCount - targetPreview.index()
           neededPreviews = if previewsLeftToDisplay <= visiblePreviewCount
@@ -121,9 +133,9 @@ $ ->
         if newIndex > currentSlideIndex
           tempTargetSlide.insertAfter currentSlide
           caruselSlidesContainer.animate { left: "-=#{ slideWidth }" }, animationSpeed, animCallback
-          completePreviews()
+          completePreviews('forward')
         else
           tempTargetSlide.insertBefore currentSlide
           caruselSlidesContainer.css { left: "-#{ slideWidth * (currentSlideIndex + 1) }px" }
           caruselSlidesContainer.animate { left: "+=#{ slideWidth }" }, animationSpeed, animCallback
-          completePreviews()
+          completePreviews('backward')

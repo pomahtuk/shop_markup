@@ -21,6 +21,7 @@ header {
         @include inline-block;
         margin-left: 13px;
         float: left;
+        position: relative;
 
         .current-city {
           color: #2b2a2a;
@@ -29,10 +30,39 @@ header {
         }
 
         .rest-cities {
+          @include border-radius(3px);
+          @include box-shadow(rgba(#000, .4) 0 1px 4px);
           display: none;
           list-style: none;
           margin: 0;
-          padding: 0;
+          position: absolute;
+          left: 0px;
+          top: 30px;
+          background: #fff;
+          padding: 0px 10px 15px 10px;
+          z-index: 99;
+          min-width: 140px;
+
+          &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 7px;
+            width: 12px;
+            top: -7px;
+            left: 13px;
+            background: url("../img/main/mincro_sprite.png") 0px -40px;
+          }
+
+          .rest-cities-item {
+            margin-top: 15px;
+          }
+
+          .rest-cities-link {
+            text-decoration: none;
+            color: #393838;
+          }
+
         }
       }
 

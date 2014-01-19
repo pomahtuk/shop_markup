@@ -97,6 +97,7 @@ header .top-info .top-info-content .cities {
   *display: inline;
   margin-left: 13px;
   float: left;
+  position: relative;
 }
 
 @media -sass-debug-info {
@@ -105,7 +106,7 @@ header .top-info .top-info-content .cities {
   }
 
   line {
-    font-family: \0000325;
+    font-family: \0000326;
   }
 }
 
@@ -121,15 +122,24 @@ header .top-info .top-info-content .cities .current-city {
   }
 
   line {
-    font-family: \0000331;
+    font-family: \0000332;
   }
 }
 
 header .top-info .top-info-content .cities .rest-cities {
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 4px;
   display: none;
   list-style: none;
   margin: 0;
-  padding: 0;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  background: #fff;
+  padding: 0px 10px 15px 10px;
+  z-index: 99;
+  min-width: 140px;
 }
 
 @media -sass-debug-info {
@@ -138,7 +148,57 @@ header .top-info .top-info-content .cities .rest-cities {
   }
 
   line {
-    font-family: \0000339;
+    font-family: \0000346;
+  }
+}
+
+header .top-info .top-info-content .cities .rest-cities:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 12px;
+  top: -7px;
+  left: 13px;
+  background: url("../img/main/mincro_sprite.png") 0px -40px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000357;
+  }
+}
+
+header .top-info .top-info-content .cities .rest-cities .rest-cities-item {
+  margin-top: 15px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000361;
+  }
+}
+
+header .top-info .top-info-content .cities .rest-cities .rest-cities-link {
+  text-decoration: none;
+  color: #393838;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/header\.scss;
+  }
+
+  line {
+    font-family: \0000369;
   }
 }
 
@@ -158,7 +218,7 @@ header .top-info .top-info-content .links {
   }
 
   line {
-    font-family: \0000344;
+    font-family: \0000374;
   }
 }
 
@@ -174,7 +234,7 @@ header .top-info .top-info-content .links a {
   }
 
   line {
-    font-family: \0000350;
+    font-family: \0000380;
   }
 }
 
@@ -190,7 +250,7 @@ header .top-info .top-info-content .links .enter-link {
   }
 
   line {
-    font-family: \0000356;
+    font-family: \0000386;
   }
 }
 
@@ -205,7 +265,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000361;
+    font-family: \0000391;
   }
 }
 
@@ -220,7 +280,7 @@ header .top-info .top-info-content .links .basket-link {
   }
 
   line {
-    font-family: \0000365;
+    font-family: \0000395;
   }
 }
 
@@ -241,7 +301,7 @@ header .top-info .top-info-content .links .basket-link:before {
   }
 
   line {
-    font-family: \0000376;
+    font-family: \00003106;
   }
 }
 
@@ -255,7 +315,7 @@ header .top-info .top-info-content .links .enter-link:before {
   }
 
   line {
-    font-family: \0000380;
+    font-family: \00003110;
   }
 }
 
@@ -271,7 +331,7 @@ header .top-info .top-info-content .links .basket-link:before {
   }
 
   line {
-    font-family: \0000392;
+    font-family: \00003122;
   }
 }
 
@@ -289,7 +349,7 @@ header .logo-info-search {
   }
 
   line {
-    font-family: \0000399;
+    font-family: \00003129;
   }
 }
 
@@ -310,7 +370,7 @@ header .logo-info-search:after {
   }
 
   line {
-    font-family: \00003110;
+    font-family: \00003140;
   }
 }
 
@@ -325,7 +385,7 @@ header .logo-info-search .logo {
   }
 
   line {
-    font-family: \00003115;
+    font-family: \00003145;
   }
 }
 
@@ -342,7 +402,7 @@ header .logo-info-search .phone {
   }
 
   line {
-    font-family: \00003122;
+    font-family: \00003152;
   }
 }
 
@@ -361,7 +421,7 @@ header .logo-info-search .our-shops {
   }
 
   line {
-    font-family: \00003130;
+    font-family: \00003160;
   }
 }
 
@@ -382,7 +442,7 @@ header .logo-info-search .our-shops:before {
   }
 
   line {
-    font-family: \00003142;
+    font-family: \00003172;
   }
 }
 
@@ -405,7 +465,7 @@ header .logo-info-search .search-form {
   }
 
   line {
-    font-family: \00003150;
+    font-family: \00003180;
   }
 }
 
@@ -426,7 +486,7 @@ header .logo-info-search .search-form:before {
   }
 
   line {
-    font-family: \00003161;
+    font-family: \00003191;
   }
 }
 
@@ -448,7 +508,7 @@ header .logo-info-search .search-form .search-box {
   }
 
   line {
-    font-family: \00003172;
+    font-family: \00003202;
   }
 }
 
@@ -475,7 +535,7 @@ header .logo-info-search .search-form .search-submit {
   }
 
   line {
-    font-family: \00003192;
+    font-family: \00003222;
   }
 }
 
@@ -490,7 +550,7 @@ header .main-menu-container {
   }
 
   line {
-    font-family: \00003196;
+    font-family: \00003226;
   }
 }
 
@@ -511,7 +571,7 @@ header .main-menu-container .main-menu {
   }
 
   line {
-    font-family: \00003202;
+    font-family: \00003232;
   }
 }
 
@@ -531,7 +591,7 @@ header .main-menu-container .main-menu .main-menu-item {
   }
 
   line {
-    font-family: \00003207;
+    font-family: \00003237;
   }
 }
 
@@ -552,7 +612,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link {
   }
 
   line {
-    font-family: \00003217;
+    font-family: \00003247;
   }
 }
 
@@ -567,7 +627,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo {
   }
 
   line {
-    font-family: \00003220;
+    font-family: \00003250;
   }
 }
 
@@ -581,7 +641,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.photo:hov
   }
 
   line {
-    font-family: \00003224;
+    font-family: \00003254;
   }
 }
 
@@ -596,7 +656,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens {
   }
 
   line {
-    font-family: \00003227;
+    font-family: \00003257;
   }
 }
 
@@ -610,7 +670,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.lens:hove
   }
 
   line {
-    font-family: \00003231;
+    font-family: \00003261;
   }
 }
 
@@ -625,7 +685,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash {
   }
 
   line {
-    font-family: \00003234;
+    font-family: \00003264;
   }
 }
 
@@ -639,7 +699,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.flash:hov
   }
 
   line {
-    font-family: \00003238;
+    font-family: \00003268;
   }
 }
 
@@ -654,7 +714,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesoriz
   }
 
   line {
-    font-family: \00003241;
+    font-family: \00003271;
   }
 }
 
@@ -668,7 +728,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.accesoriz
   }
 
   line {
-    font-family: \00003245;
+    font-family: \00003275;
   }
 }
 
@@ -683,7 +743,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage {
   }
 
   line {
-    font-family: \00003248;
+    font-family: \00003278;
   }
 }
 
@@ -697,7 +757,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.storage:h
   }
 
   line {
-    font-family: \00003252;
+    font-family: \00003282;
   }
 }
 
@@ -712,7 +772,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable 
   }
 
   line {
-    font-family: \00003255;
+    font-family: \00003285;
   }
 }
 
@@ -726,7 +786,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.portable:
   }
 
   line {
-    font-family: \00003259;
+    font-family: \00003289;
   }
 }
 
@@ -741,7 +801,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials
   }
 
   line {
-    font-family: \00003262;
+    font-family: \00003292;
   }
 }
 
@@ -755,7 +815,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.materials
   }
 
   line {
-    font-family: \00003266;
+    font-family: \00003296;
   }
 }
 
@@ -770,7 +830,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio {
   }
 
   line {
-    font-family: \00003269;
+    font-family: \00003299;
   }
 }
 
@@ -784,7 +844,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.studio:ho
   }
 
   line {
-    font-family: \00003273;
+    font-family: \00003303;
   }
 }
 
@@ -799,7 +859,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.used {
   }
 
   line {
-    font-family: \00003276;
+    font-family: \00003306;
   }
 }
 
@@ -813,7 +873,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.used:hove
   }
 
   line {
-    font-family: \00003280;
+    font-family: \00003310;
   }
 }
 
@@ -828,7 +888,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc {
   }
 
   line {
-    font-family: \00003283;
+    font-family: \00003313;
   }
 }
 
@@ -842,7 +902,7 @@ header .main-menu-container .main-menu .main-menu-item .main-menu-link.misc:hove
   }
 
   line {
-    font-family: \00003291;
+    font-family: \00003321;
   }
 }
 
@@ -871,7 +931,7 @@ header .main-menu-container .photo-service {
   }
 
   line {
-    font-family: \00003306;
+    font-family: \00003336;
   }
 }
 
@@ -894,7 +954,7 @@ header .main-menu-container .opened-menu {
   }
 
   line {
-    font-family: \00003317;
+    font-family: \00003347;
   }
 }
 
@@ -912,7 +972,7 @@ header .main-menu-container .opened-menu ul {
   }
 
   line {
-    font-family: \00003324;
+    font-family: \00003354;
   }
 }
 
@@ -926,7 +986,7 @@ header .main-menu-container .opened-menu ul.active {
   }
 
   line {
-    font-family: \00003329;
+    font-family: \00003359;
   }
 }
 
@@ -947,7 +1007,7 @@ header .main-menu-container .opened-menu .opened-menu-colimn-4 {
   }
 
   line {
-    font-family: \00003339;
+    font-family: \00003369;
   }
 }
 
@@ -971,7 +1031,7 @@ header .main-menu-container .opened-menu .opened-menu-colimn-4:after {
   }
 
   line {
-    font-family: \00003351;
+    font-family: \00003381;
   }
 }
 
@@ -985,7 +1045,7 @@ header .main-menu-container .opened-menu .opened-menu-colimn-1 {
   }
 
   line {
-    font-family: \00003355;
+    font-family: \00003385;
   }
 }
 
