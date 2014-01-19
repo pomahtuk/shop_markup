@@ -57,7 +57,7 @@ body {
   }
 }
 
-.content {
+.main-page-content {
   width: 970px;
   margin: 0 auto;
   z-index: 1;
@@ -1282,7 +1282,50 @@ body {
   }
 
   line {
-    font-family: \00003533;
+    font-family: \00003532;
+  }
+}
+
+.to-top-arrow {
+  height: 1097px;
+  width: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  line-height: 1097px;
+  background: rgba(21, 97, 198, 0.2);
+  text-align: center;
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003543;
+  }
+}
+
+.to-top-arrow i {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 9px;
+  height: 19px;
+  background: url("../img/main/mincro_sprite.png") -24px -40px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/C\:\/Users\/ilja\/Desktop\/shop_markup\/css\/main\.scss;
+  }
+
+  line {
+    font-family: \00003552;
   }
 }
 
@@ -1296,7 +1339,7 @@ form .control-group {
   }
 
   line {
-    font-family: \00003536;
+    font-family: \00003555;
   }
 }
 
@@ -1313,7 +1356,7 @@ form .control-group label {
   }
 
   line {
-    font-family: \00003543;
+    font-family: \00003562;
   }
 }
 
@@ -1335,7 +1378,7 @@ form .control-group input[type="password"] {
   }
 
   line {
-    font-family: \00003554;
+    font-family: \00003573;
   }
 }
 
@@ -1357,7 +1400,7 @@ form .control-group select {
   }
 
   line {
-    font-family: \00003565;
+    font-family: \00003584;
   }
 }
 
@@ -1372,7 +1415,7 @@ form .control-group input[type="checkbox"] {
   }
 
   line {
-    font-family: \00003569;
+    font-family: \00003588;
   }
 }
 
@@ -1388,7 +1431,7 @@ form .control-group input[type="checkbox"] + label {
   }
 
   line {
-    font-family: \00003574;
+    font-family: \00003593;
   }
 }
 
@@ -1402,7 +1445,7 @@ form .control-group input[type="checkbox"]:checked + label {
   }
 
   line {
-    font-family: \00003580;
+    font-family: \00003599;
   }
 }
 

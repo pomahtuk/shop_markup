@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    var animInProgress, animateToSlide, animationSpeed, authContent, caruselNavigation, caruselPreviews, caruselPreviewsContainer, caruselSlides, caruselSlidesContainer, citiesList, citiesTrigger, currentSlideIndex, popup, popupContainer, popupTrigger, registerContent, tabLinks, visiblePreviewCount;
+    var animInProgress, animateToSlide, animationSpeed, authContent, caruselNavigation, caruselPreviews, caruselPreviewsContainer, caruselSlides, caruselSlidesContainer, citiesList, citiesTrigger, currentSlideIndex, popup, popupContainer, popupTrigger, registerContent, tabLinks, toTopArrow, visiblePreviewCount;
     popup = $('.register-popup');
     popupContainer = $('.popup-overlay');
     popupTrigger = $('header > .top-info .enter-link');
@@ -41,6 +41,20 @@
     citiesTrigger.click(function(e) {
       citiesList.toggle();
       return false;
+    });
+    toTopArrow = $("a.to-top-arrow");
+    toTopArrow.scrollspy({
+      min: $('.main-page-content .new-goods').offset().top,
+      max: 999999,
+      onEnter: function(element, position) {
+        return toTopArrow.show();
+      },
+      onLeave: function(element, position) {
+        return toTopArrow.hide();
+      }
+    });
+    toTopArrow.click(function() {
+      return $(document).scrollTo(0, 200);
     });
     caruselSlides = $('.banner-container .full-banners > .single-banner');
     caruselSlidesContainer = $('.banner-container .full-banners');
@@ -110,8 +124,6 @@
             if (neededPreviews > 0) {
               newPreviews = caruselPreviews.slice(0, neededPreviews).clone();
               caruselPreviewsContainer.append(newPreviews);
-            } else {
-              newPreviews = [];
             }
             return caruselPreviewsContainer.animate({
               left: "-" + (previewWidth * neededPreviews) + "px"

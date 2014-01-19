@@ -50,6 +50,25 @@ $ ->
     false
 
   #
+  # To top arrow part
+  #
+
+  toTopArrow = $("a.to-top-arrow")
+
+  toTopArrow.scrollspy
+    min: $('.main-page-content .new-goods').offset().top
+    max: 999999
+
+    onEnter: (element, position) ->
+      toTopArrow.show()
+
+    onLeave: (element, position) ->
+      toTopArrow.hide()
+
+  toTopArrow.click ->
+    $(document).scrollTo(0, 200)
+
+  #
   # Carusel part
   #
 
@@ -114,6 +133,7 @@ $ ->
         completePreviews = (direction = 'forward') ->
           # FIXME: only one direction now, should be bi-directional
           previewsLeftToDisplay = previewCount - targetPreview.index()
+
           neededPreviews = if previewsLeftToDisplay <= visiblePreviewCount
             visiblePreviewCount - previewsLeftToDisplay + 1
           else
@@ -121,8 +141,6 @@ $ ->
           if neededPreviews > 0
             newPreviews = caruselPreviews.slice(0, neededPreviews).clone()
             caruselPreviewsContainer.append newPreviews
-          else
-            newPreviews = []
 
           caruselPreviewsContainer.animate { left: "-#{ previewWidth * (neededPreviews)}px" }, animationSpeed, ->
             if neededPreviews > 0

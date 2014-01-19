@@ -8,7 +8,7 @@ body {
   font-family: 'proxima_nova_rgregular', Arial;
 }
 
-.content {
+.main-page-content {
   width:  970px;
   margin: 0 auto;
   z-index: 1;
@@ -527,6 +527,25 @@ body {
 
   }
 
+}
+
+.to-top-arrow {
+  height: 1097px;
+  width: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  line-height: 1097px;
+  background: rgba(#1561c6, 0.2);
+  text-align: center;
+  display: none;
+
+  i {
+    @include inline-block;
+    width: 9px;
+    height: 19px;
+    background: url("../img/main/mincro_sprite.png") -24px -40px;
+  }
 }
 
 form {
