@@ -1,48 +1,5 @@
 @import "compass";
-
-$borderColor: #efefef;
-$headingsColor: #393838;
-$newsDateColor: #757373;
-$boldTextColor: #2b2a2a;
-$itemTitleColor: #2e2d2e;
-$linkColor: #246fd0;
-$frameColor: #ffd503;
-
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima_nova_ltlight';
-    src: url('/fonts/mark_simonson_-_proxima_nova_light-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
-    src: url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
-         url('/fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import "./base";
 
 body {
   background: #fff;
@@ -51,9 +8,10 @@ body {
   font-family: 'proxima_nova_rgregular', Arial;
 }
 
-.content {
+.main-page-content {
   width:  970px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .main-info {
@@ -95,7 +53,7 @@ body {
     width: 40px;
     height: 20px;
     float: right;
-    background: url('/img/main/all_news.png');
+    background: url('../img/main/all_news.png');
   }
 
   .news-list {
@@ -110,6 +68,8 @@ body {
       img {
         float: left;
         margin: 0px 18px 0px 0px;
+        max-width: 77px;
+        max-height: 77px;
       }
 
       .date {
@@ -139,13 +99,27 @@ body {
     position: relative;
   }
 
+  .full-banners-container {
+    width: 652px;
+    height: 460px;
+    overflow: hidden;
+  }
+
   .full-banners {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 652px;
-    height: 460px;
-    overflow: hidden;
+    width: 9999px;
+    position: relative;
+
+    .single-banner {
+      float: left;
+
+      img {
+        width: 652px;
+        height: 460px;
+      }
+    }
   }
 
   .banners-navigation {
@@ -164,44 +138,64 @@ body {
       color: #fff;
       font-weight: bold;
       text-decoration: none;
+      // background: url("../img/main/mincro_sprite.png") -26px -23px;
     }
 
     .prev-banner {
       left: 12px;
+      background: url("../img/main/mincro_sprite.png") -45px -23px;
     }
 
     .next-banner {
       right: 12px;
+      background: url("../img/main/mincro_sprite.png") -26px -23px;
+    }
+
+    .banners-preview-container {
+      width: 585px;
+      height: 51px;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
     .banners-preview {
       list-style: none;
-      width: 585px;
-      height: 51px;
-      overflow: hidden;
-      margin: 0 auto;
+      margin: 0;
       padding: 0px;
+      position: relative;
+      width: 9999px;
 
-      .single-banner-preview a{
-        @include border-radius(4px);
-        display: block;
+      .single-banner-preview {
         float: left;
-        border: 2px solid rgba(#fff, 0.4);
-        height: 37px;
-        line-height: 1.3;
-        padding: 10px 10px 0px 10px;
-        color: #fff;
-        font-size: 10px;
-        font-weight: bold;
-        font-family: 'proxima_nova_rgbold';
-        text-transform: uppercase;
-        text-decoration: none;
-        width: 88px;
-        margin: 0 2.5px;
 
-        &:hover{
-          border: 2px solid #fff;
-          background: rgba(#fff, 0.22);
+        a{
+          @include border-radius(4px);
+          display: block;
+          float: left;
+          border: 2px solid rgba(#fff, 0.4);
+          height: 37px;
+          line-height: 1.3;
+          padding: 10px 10px 0px 10px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: bold;
+          font-family: 'proxima_nova_rgbold';
+          text-transform: uppercase;
+          text-decoration: none;
+          width: 88px;
+          margin: 0 2.5px;
+
+          &:hover {
+            border: 2px solid #fff;
+            background: rgba(#fff, 0.22);
+          }
+        }
+
+        &.active {
+          a {
+            border: 2px solid #fff;
+            background: rgba(#fff, 0.22); 
+          }
         }
       }
     }
@@ -221,7 +215,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 30px;
-    background: url('/img/main/all_deals.png');
+    background: url('../img/main/all_deals.png');
   }
 
 }
@@ -265,11 +259,31 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: $headingsColor;
-    background: url('/img/main/hits_headings.png') no-repeat center;
+    background: url('../img/main/hits_headings.png') no-repeat center;
   }
 
   .popular-goods-container {
     margin-bottom: 30px;
+  }
+}
+
+.ruble {
+  font-size: 0px;
+  &:before {
+    font-family: 'Ruble';
+    font-style: normal;
+    content: "a";
+    font-size: 16px;
+  }
+}
+
+.ruble-bold {
+  font-size: 0px;
+  &:before {
+    font-family: 'Ruble';
+    font-style: normal;
+    content: "c";
+    font-size: 16px;
   }
 }
 
@@ -286,6 +300,8 @@ body {
 
   .single-good-image {
     margin-bottom: 10px;
+    max-height: 125px;
+    max-width: 190px;
   }
 
   .single-good-title{
@@ -304,6 +320,16 @@ body {
     left: 0px;
     padding: 0px 9px 0px 20px;
     text-align: left;
+
+    .old-price {
+      position: absolute;
+      top: -13px;
+      left: 20px;
+      font-size: 11px;
+      font-family: 'proxima_nova_rgbold';
+      color: #b4b4b4;
+      text-decoration: line-through;
+    }
 
     .price {
       @include inline-block;
@@ -325,7 +351,7 @@ body {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
-      background: url('/img/main/to_cart.png')
+      background: url('../img/main/to_cart.png')
     }
   }
 }
@@ -335,4 +361,241 @@ body {
   color: $linkColor;
   font-size: 18px;
   border-bottom: 1px solid rgba($linkColor, 0.5)
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(#120f10, 0.65);
+  z-index: 999;
+  display: none;
+
+  .register-popup {
+    @include border-radius(4px);
+    width: 430px;
+    height: 500px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -250px;
+    overflow: hidden;
+
+    &.register {
+      height: 580px;
+      margin-top: -290px;
+    }
+
+    .tabs {
+      height: 60px;
+      font-size: 0px;
+
+      .tab-link {
+        @include inline-block;
+        width: 50%;
+        background: #e8eff3;
+        height: 100%;
+        text-decoration: none;
+        font-size: 14px;
+        color: #7c858a;
+        line-height: 60px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &.active{
+          background: #fff;
+          color: #2e2d2e;
+        }
+      }
+    }
+
+    .popup-content {
+      padding: 40px 65px 40px 65px;
+
+      input[type="text"],
+      input[type="password"] {
+        width: 270px;
+      }
+
+      input[type="submit"] {
+        float: right;
+        border: none;
+        outline: none;
+        background: url("../img/main/search.png");
+        height: 31px;
+        width: 82px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .forot-password {
+        color: #216ccc;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(#216ccc, 0.5);
+        line-height: 31px;
+      }
+
+      .control-group.enter {
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #e8eff3;
+      }
+
+      .social-login {
+        margin-top: 30px;
+
+        .social-login-button {
+          display: block;
+          margin: 0px auto 17px auto;
+          height: 50px;
+          width: 234px;
+          padding-left: 48px;
+          text-decoration: none;
+          text-align: center;
+          color: #fff;
+          text-shadow: rgba(#000, .48) 0 1px 0;
+          font-size: 15px;
+          font-weight: bold;
+          line-height: 50px;
+          background: url("../img/main/social_login.png");
+
+          &.vk {
+            background-position: 0px -67px;
+          }
+        }
+
+      }
+
+      .popup-content-register {
+        display: none;
+      }
+
+      .popup-content-register {
+
+        #day,
+        #month,
+        #year {
+          @include inline-block;
+          margin-right: 7px;
+        }
+
+        #day {
+          width: 47px;
+        }
+        #month {
+          width: 125px;
+        }
+        #year {
+          width: 55px;
+          margin-right: 0px;
+        }
+
+        .want-to-know {
+          margin: 25px 0px;
+        }
+
+        .i-agree {
+          width: 320px;
+          line-height: 1.5;
+
+          a{
+            color: #226dce;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(#226dce, 0.5);
+          }
+        }
+
+        .control-group.submit {
+          input[type="submit"] {
+            width: 196px;
+            float: none;
+            margin: 30px auto 0px auto;
+            display: block;
+            background: url("../img/main/register.png");
+          }
+        }
+
+      }     
+
+    }
+
+  }
+
+}
+
+.to-top-arrow {
+  height: 1097px;
+  width: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  line-height: 1097px;
+  background: rgba(#1561c6, 0.2);
+  text-align: center;
+  display: none;
+
+  i {
+    @include inline-block;
+    width: 9px;
+    height: 19px;
+    background: url("../img/main/mincro_sprite.png") -24px -40px;
+  }
+}
+
+form {
+  .control-group {
+    margin-bottom: 15px;
+
+    label{
+      font-size: 14px;
+      color: #2e2d2e;
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      @include border-radius(2px);
+      @include box-shadow(rgba(#000, .52) 0px 0px 3px inset);
+      display: block;
+      height: 32px;
+      padding: 0px 10px;
+      background: #fff;
+      border: none;
+    }
+
+    select {
+      @include border-radius(2px);
+      @include box-shadow(rgba(#000, .52) 0px 0px 3px inset);
+      cursor: pointer;
+      height: 32px;
+      outline: none;
+      border: none;
+      background: #fff;
+      padding: 0px 10px;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="checkbox"] + label {
+        background: url("../img/main/checkbox.png") 0 0 no-repeat;
+        padding-left: 20px;
+        line-height: 16px;
+    }
+    input[type="checkbox"]:checked + label {
+        background-position: 0 -16px;
+    }
+  }
+}
+
+.noscroll {
+  overflow: hidden;
 }

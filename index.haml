@@ -29,6 +29,9 @@
               %li.rest-cities-item
                 %a.rest-cities-link{href:"#"}
                   Москва
+              %li.rest-cities-item
+                %a.rest-cities-link{href:"#"}
+                  Москва
 
           .links
             %a.info-link{href: "#"} Доставка и оплата
@@ -36,112 +39,240 @@
             %a.enter-link{href: "#"} Войти
             %a.basket-link{href: "#"} В корзине 2 товара
             %span.total-price
-              32 000a
+              32 000
+              %i.ruble
+                руб.
 
-    .content
+      .logo-info-search
+        %h1.logo
+          %a{href: "#"}
+            %img{src:"./img/main/logo.png"}
+
+        .search-form
+          %form
+            %input.search-box{type: "text", name:"search"}
+            %input.search-submit{type: "submit", value: "Искать"}
+
+        %span.phone
+          (812) 335 55 00
+
+        %a.our-shops{href:"#"}
+          Наши магазины
+
+      .main-menu-container
+        %ul.main-menu
+          %li.main-menu-item
+            %a.main-menu-link.photo{href:"#"}
+              фото и видео техника
+          %li.main-menu-item
+            %a.main-menu-link.lens{href:"#"}
+              объективы
+          %li.main-menu-item
+            %a.main-menu-link.flash{href:"#"}
+              вспышки
+          %li.main-menu-item
+            %a.main-menu-link.accesorize{href:"#"}
+              аксессуары
+          %li.main-menu-item
+            %a.main-menu-link.storage{href:"#"}
+              носители
+          %li.main-menu-item
+            %a.main-menu-link.portable{href:"#"}
+              портативная техника
+          %li.main-menu-item
+            %a.main-menu-link.materials{href:"#"}
+              материалы
+          %li.main-menu-item
+            %a.main-menu-link.studio{href:"#"}
+              студийное оборудования
+          %li.main-menu-item
+            %a.main-menu-link.used{href:"#"}
+              Б/У техника
+          %li.main-menu-item
+            %a.main-menu-link.misc{href:"#"}
+              разное
+
+        %a.photo-service{href: "#"}
+          фотоуслуги
+
+        / TODO: 
+        / understand behabiour of menu
+        .opened-menu
+          .opened-menu-colimn-1
+            %ul.photo.active
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Фотокамеры
+            %ul.lens
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Объективы
+            %ul.accesorize
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Сумки
+            %ul.storage
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Фотокамеры
+            %ul.portable
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Аудиоплееры
+            %ul.materials
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Фотоплёнка
+            %ul.studio
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Софиты
+            %ul.used
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Фотокамеры
+            %ul.misc
+              %li.opened-menu-item
+                %a.opened-menu-link{href: '#'}
+                  Книги
+
+          %ul.opened-menu-colimn-2
+            %li.opened-menu-item
+              %a.opened-menu-link{href: '#'}
+                Фотокамеры
+          %ul.opened-menu-colimn-3
+            %li.opened-menu-item
+              %a.opened-menu-link{href: '#'}
+                Фотокамеры
+          %ul.opened-menu-colimn-4
+            %li.opened-menu-item
+              %a.opened-menu-link{href: '#'}
+                Фотокамеры
+
+    .main-page-content
       .main-info
         .news
           %a.all-news{href: "#"}
           %h3 НОВОСТИ
           %ul.news-list
             %li.single-news
-              %img{src: 'http://placehold.it/77x77'}
+              %img{src: 'http://lorempixel.com/77/77/technics/1'}
               %span.date 12 ноября
               %a.news-content{href: "#"} Cовместная акция с компанией Nikon
             %li.single-news
-              %img{src: 'http://placehold.it/77x77'}
+              %img{src: 'http://lorempixel.com/77/77/technics/2'}
               %span.date 12 ноября
               %a.news-content{href: "#"} Выставка Владимира Капустина "Армения. Двадцать лет спустя"
             %li.single-news
-              %img{src: 'http://placehold.it/77x77'}
+              %img{src: 'http://lorempixel.com/77/77/technics/3'}
               %span.date 12 ноября
               %a.news-content{href: "#"} Cовместная акция
             %li.single-news
-              %img{src: 'http://placehold.it/77x77'}
+              %img{src: 'http://lorempixel.com/77/77/technics/4'}
               %span.date 12 ноября
               %a.news-content{href: "#"} Cовместная акция с компанией Nikon
         .banners
           .banner-container
             %a.all-deals{href: "#"} 
               Все акции
-            %ul.full-banners
-              %li.single-banner
-                %img{src: "http://placehold.it/652x460"}
-              %li.single-banner
-                %img{src: "http://placehold.it/652x460"}
+            .full-banners-container
+              %ul.full-banners
+                %li.single-banner{data:{index: 0}}
+                  %img{src: "./img/markup/banner.png"}
+                %li.single-banner{data:{index: 1}}
+                  %img{src: "http://placehold.it/652x461"}
+                %li.single-banner{data:{index: 2}}
+                  %img{src: "http://placehold.it/652x462"}
+                %li.single-banner{data:{index: 3}}
+                  %img{src: "http://placehold.it/652x463"}
+                %li.single-banner{data:{index: 4}}
+                  %img{src: "http://placehold.it/652x464"}
+                %li.single-banner{data:{index: 5}}
+                  %img{src: "http://placehold.it/652x465"}
             .banners-navigation
-              %a.prev-banner{href: "#"} <
-              %ul.banners-preview
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-                %li.single-banner-preview
-                  %a{href:"#"}
-                    получить
-                    %br
-                    карту клиента
-              %a.next-banner{href: "#"} >
+              %a.prev-banner{href: "#"}
+              .banners-preview-container
+                %ul.banners-preview
+                  %li.single-banner-preview.active{data:{index: 0}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 0
+                  %li.single-banner-preview{data:{index: 1}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 1
+                  %li.single-banner-preview{data:{index: 2}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 2
+                  %li.single-banner-preview{data:{index: 3}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 3
+                  %li.single-banner-preview{data:{index: 4}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 4
+                  %li.single-banner-preview{data:{index: 5}}
+                    %a{href:"#"}
+                      получить
+                      %br
+                      карту клиента 5
+              %a.next-banner{href: "#"}
 
       .new-goods
         %h2.new-goods-header 
           Новые товары
         .new-goods-container
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera1.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
+              %span.old-price
+                34 000
               %span.price 
-                32 990 c
+                32 990 
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera2.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera1.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera2.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990 
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
 
@@ -152,42 +283,53 @@
           Хиты продаж
         .popular-goods-container
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera2.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera1.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera2.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
           .single-good-item
-            %img.single-good-image{src: "http://placehold.it/190x125"}
+            %img.single-good-image{src: "./img/markup/camera1.jpg"}
             %span.single-good-title 
               Canon EOS-60D 18-55  IS Kit
             .single-good-item-custmer
               %span.price 
-                32 990 c
+                32 990
+                %i.ruble-bold
+                  руб.
               %a.add-to-cart{href: "#"} 
                 в корзину
+        
         %a.view-all{href: "#"} Посмотреть все новинки
+
+
 
     %footer
       .about
@@ -223,7 +365,98 @@
           %a.social-vk{href: "#"}
           %a.social-facebook{href: "#"}
           %a.social-twitter{href: "#"}
+      
+      %a.to-top-arrow
+        %i
+
+    .popup-overlay
+      .register-popup.auth
+        .tabs
+          %a.tab-link.auth.active{href: "#"}
+            авторизация
+          %a.tab-link.register{href: "#"}
+            регистрация
+        .popup-content
+          .popup-content-auth
+            %form
+              .control-group
+                %label{for: "email"}
+                  Электронная почта
+                %input#email{type: "text", name: "email"}
+              .control-group
+                %label{for: "password"}
+                  Пароль
+                %input#password{type: "password", name: "password"}
+              .control-group.enter
+                %a.forot-password{href: "#"}
+                  Я забыл пароль
+                %input{type: "submit", value: "Войти"}
+            .social-login
+              %a.social-login-button.fb{href: "#"}
+                Войти с помощью Facebook
+              %a.social-login-button.vk{href: "#"}
+                Войти с помощью Вконтакте
+          .popup-content-register
+            %form
+              .control-group
+                %label{for: "name"}
+                  Имя и фамилия
+                %input#name{type: "text", name: "name"}
+              .control-group
+                %label{for: "phone"}
+                  Телефон
+                %input#phone{type: "text", name: "phone"}
+              .control-group
+                %label{for: "email"}
+                  Электронная почта
+                %input#email{type: "text", name: "email"}
+              .control-group
+                %label{for: "birth"}
+                  Дата рождения
+                %input#day{type: "text", name: "day", placeholder: "день"}
+                %select#month{name: "month"}
+                  %option{disabled:"", selected: "selected"}
+                    месяц
+                  %option{value: "01"}
+                    Январь
+                  %option{value: "02"}
+                    Февраль
+                  %option{value: "03"}
+                    Март
+                  %option{value: "04"}
+                    Апрель
+                  %option{value: "05"}
+                    Май
+                  %option{value: "06"}
+                    Июнь
+                  %option{value: "07"}
+                    Июль
+                  %option{value: "08"}
+                    Август
+                  %option{value: "09"}
+                    Сентябрь
+                  %option{value: "10"}
+                    Октябрь
+                  %option{value: "11"}
+                    Ноябрь
+                  %option{value: "12"}
+                    Декабрь
+                / %input#month{type: "text", name: "month", placeholder: "месяц"}
+                %input#year{type: "text", name: "year", placeholder: "год"}
+              .control-group.misc
+                .want-to-know
+                  %input#want{type: "checkbox", name: "want"}
+                  %label{for: "want"}
+                    Хочу знать об интересных предложениях
+                .i-agree
+                  Нажимая кнопку «Регистрация» я подтверждаю свое согласие с 
+                  %a.legal{href:"#"}
+                    Условиями продажи
+              .control-group.submit
+                %input{type: "submit", value: "Зарегистрироваться"}
 
     %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    %script{src: "js/jquery-scrollspy.js"}
+    %script{src: "js/jquery.scrollTo.js"}
     %script{src: "js/plugins.js"}
     %script{src: "js/main.js"}

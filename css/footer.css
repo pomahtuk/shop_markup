@@ -10,6 +10,7 @@
 
 footer {
   height: 200px;
+  position: relative;
 }
 
 @media -sass-debug-info {
@@ -18,13 +19,13 @@ footer {
   }
 
   line {
-    font-family: \000036;
+    font-family: \000037;
   }
 }
 
 footer .about {
   height: 76px;
-  background: url("/img/footer/about_bg.png");
+  background: url("../img/footer/about_bg.png");
   font-size: 16px;
 }
 
@@ -34,7 +35,7 @@ footer .about {
   }
 
   line {
-    font-family: \0000311;
+    font-family: \0000312;
   }
 }
 
@@ -51,7 +52,7 @@ footer .about .about-content {
   }
 
   line {
-    font-family: \0000317;
+    font-family: \0000318;
   }
 }
 
@@ -73,7 +74,7 @@ footer .about .about-content .about-menu {
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000325;
   }
 }
 
@@ -92,7 +93,7 @@ footer .about .about-content .about-menu .about-menu-item {
   }
 
   line {
-    font-family: \0000328;
+    font-family: \0000329;
   }
 }
 
@@ -107,7 +108,7 @@ footer .about .about-content .about-menu .about-menu-item .about-menu-link {
   }
 
   line {
-    font-family: \0000337;
+    font-family: \0000338;
   }
 }
 
@@ -123,7 +124,7 @@ footer .info {
   }
 
   line {
-    font-family: \0000342;
+    font-family: \0000343;
   }
 }
 
@@ -142,7 +143,7 @@ footer .info .phone {
   }
 
   line {
-    font-family: \0000351;
+    font-family: \0000352;
   }
 }
 
@@ -158,7 +159,7 @@ footer .info .social {
   }
 
   line {
-    font-family: \0000356;
+    font-family: \0000357;
   }
 }
 
@@ -170,7 +171,7 @@ footer .info .social a {
   *display: inline;
   width: 36px;
   height: 36px;
-  background: url("/img/footer/social.png");
+  background: url("../img/footer/social.png");
 }
 
 @media -sass-debug-info {
@@ -179,7 +180,7 @@ footer .info .social a {
   }
 
   line {
-    font-family: \0000363;
+    font-family: \0000364;
   }
 }
 
@@ -193,7 +194,7 @@ footer .info .social .social-twitter {
   }
 
   line {
-    font-family: \0000367;
+    font-family: \0000368;
   }
 }
 
@@ -207,7 +208,7 @@ footer .info .social .social-facebook {
   }
 
   line {
-    font-family: \0000371;
+    font-family: \0000372;
   }
 }
 
@@ -221,7 +222,7 @@ footer .info .social .social-vk {
   }
 
   line {
-    font-family: \0000377;
+    font-family: \0000378;
   }
 }
 
@@ -237,7 +238,7 @@ footer .info .cards {
   }
 
   line {
-    font-family: \0000382;
+    font-family: \0000383;
   }
 }
 
@@ -251,7 +252,7 @@ footer .info .cards .cards-visa {
   width: 59px;
   height: 19px;
   margin-right: 10px;
-  background: url("/img/footer/visa.png");
+  background: url("../img/footer/visa.png");
 }
 
 @media -sass-debug-info {
@@ -260,7 +261,7 @@ footer .info .cards .cards-visa {
   }
 
   line {
-    font-family: \0000390;
+    font-family: \0000391;
   }
 }
 
@@ -273,5 +274,5 @@ footer .info .cards .cards-mastercard {
   vertical-align: middle;
   width: 52px;
   height: 31px;
-  background: url("/img/footer/mastercard.png");
+  background: url("../img/footer/mastercard.png");
 }
